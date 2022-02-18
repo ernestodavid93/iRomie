@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
@@ -8,10 +8,17 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <title>Designer - Creative HTML5 Template</title>
+    <title>Nosotros</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+   integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+   integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
 
     <!-- Additional CSS Files -->
@@ -57,24 +64,67 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Homepage</a>
+                  <a class="nav-link" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="about.html">About Us</a>
+                  <a class="nav-link active" href="about.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="explore.html">Explore Work</a>
+                  <a class="nav-link" href="contact.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="trending.html">Trending</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</a>
                 </li>
               </ul>
             </div>
           </div>
       </nav>
+
+<!--INICIO DE SESION-->
+      <div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+           
+                      <form class="px-4 py-3">
+                        <div class="form-group">
+                          <label for="exampleDropdownFormEmail1">Correo</label>
+                          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleDropdownFormPassword1">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Clave">
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                              Recuérdame
+                            </label>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Acceder</button>
+                      </form>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                      <a class="dropdown-item" href="registroUsuario.html">¿Nuevo usuario? Regístrate</a>
+                      <p style="text-align: center; font-weight: bold;">O</p>
+                      <button type="button" class="btn btn-primary">Acceder con Facebook</button>
+                      <button type="button" class="btn btn-danger">Acceder con Google</button>
+                      
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> 
+        <!--SESION FIN-->
 
   </header>
 
@@ -83,42 +133,243 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="header-text">
-                        <h2><em>About</em> Designer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod keoi tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2>Sobre<em> Nosotros</em></h2>
+                        <p>Nuestro proposito es brindarte tu espacio perfecto</p>
+                        <b>
+                        <h2>Objetivo</h2>
+
+                        <p>El alto número de jóvenes que ingresan a universidades año con año, tanto foráneos y de la misma ciudad, 
+                            han contribuido a incrementar notablemente la demanda en la renta de habitaciones dado que muchos buscan
+                            vivir lo mas a sus Universidades.</p>
+                            
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="62" viewBox="0 0 24 24" width="62"><g><rect fill="none" height="24" width="24"/></g><g><g><path class="icon" d="M21,12.22C21,6.73,16.74,3,12,3c-4.69,0-9,3.65-9,9.28C2.4,12.62,2,13.26,2,14v2c0,1.1,0.9,2,2,2h1v-6.1 c0-3.87,3.13-7,7-7s7,3.13,7,7V19h-8v2h8c1.1,0,2-0.9,2-2v-1.22c0.59-0.31,1-0.92,1-1.64v-2.3C22,13.14,21.59,12.53,21,12.22z"/><circle class="icon" cx="9" cy="13" r="1"/><circle class="icon" cx="15" cy="13" r="1"/><path class="icon" d="M18,11.03C17.52,8.18,15.04,6,12.05,6c-3.03,0-6.29,2.51-6.03,6.45c2.47-1.01,4.33-3.21,4.86-5.89 C12.19,9.19,14.88,11,18,11.03z"/></g></g></svg>
-                        <h4>Active Support 24/7</h4>
+                        <i class=" fas fa-bullseye iconos"></i>
+                        <h4>Misión</h4>
+                        <p>En iRommies estamos comprometidos con nuestros clientes, en brindarles una manera rápida y
+                            segura de buscar un compañero de habitacion en renta y apreciamos que nuestros clientes nos elijan como la
+                            plataforma líder en el sector.</p>
                     </div>
                 </div>
+                
                 <div class="col-lg-4">
                     <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="62" viewBox="0 0 24 24" width="62"><path d="M0 0h24v24H0z" fill="none"/><path class="icon" d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg>
-                        <h4>Customer Care</h4>
+                        <i class="far fa-flag iconos"></i>
+                        <h4>Valores</h4>
+                        <ul>
+                            <li> Confiabilidad con nuestros usuarios.</li>
+                            <li> Compromiso con nuestra comunidad. </li>
+                            <li> Calidad de trabajo.</li>
+                        </ul>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="62" viewBox="0 0 24 24" width="62"><path d="M0 0h24v24H0z" fill="none"/><path class="icon" d="M8 11.5c0-.83-.67-1.5-1.5-1.5S5 10.67 5 11.5 5.67 13 6.5 13 8 12.33 8 11.5zm7-5c0-.83-.67-1.5-1.5-1.5h-3C9.67 5 9 5.67 9 6.5S9.67 8 10.5 8h3c.83 0 1.5-.67 1.5-1.5zM8.5 15c-.83 0-1.5.67-1.5 1.5S7.67 18 8.5 18s1.5-.67 1.5-1.5S9.33 15 8.5 15zM12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm5.5-11c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-2 5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg>
-                        <h4>Easy to Customize</h4>
+                        <i class="far fa-eye iconos"></i>
+                        <h4>Visión</h4>
+                        <p>Ser líderes en el sector, ofreciendo a nuestros usuarios nuestra aplicación como una herramienta
+                            que facilite cada vez más la forma de comunicación y tratos del inmueble a rentar.
+                        </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
 
-    <section class="interior-design">
+    <main class="container">
+
+        <br> <br>
+       
+        <h1 class="text-center">Nuestro equipo</h1>
+
+        <br>
+
+
+        <div class="row mt-3">
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/Ernesto.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ernesto David Lopez Guevara</h5>
+                        <p class="card-text">
+                            27 años
+                            Ingenieria Informatica - UDG
+                            Amante de las mascotas, deportes, viajar, escuchar musica.
+                            Odio la catsup
+                            Desarrollador full stack
+                            "Si puedes imaginalo, puedes programarlo - Programacion ATS. RIP".
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/Felix.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jose Felix Hernandez Farias</h5>
+                        <p class="card-text">
+                            Tengo 23 años, recien egresado de ingenieria en informatica.
+                            Me encanta salir y convivir con amigos, me gusta mucho ir al cine,
+                            ver peliculas en general.
+                            Mi papel en el proyecto es como Desarrollador Web Full Stack. Lema: "Bien hecho es mejor
+                            que bien dicho"
+                            -Benjamin Franklin.
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/Jona.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jonatan Rafael Rios</h5>
+                        <p class="card-text">
+                            Hola, mi nombre es Jonatan Rafael Rios Brambila, soy ingeniero en Teleinformática. Me
+                            apasiona la tecnología y los videojuegos. Yo desempeño la función de desarrollador en
+                            este proyecto. Mis hobbies
+                            incluyen salir a caminar, ver películas y escuchar música. Mi lema es: nunca dejes de
+                            aprender cosas nuevas.
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/KarenG.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Karen Alejandra Gutiérrez</h5>
+                        <p class="card-text">
+                            Hola soy Karen, tengo 25 años, estudie la carrera de QFB. Me gusta mucho escuchar música
+                            y ver peliculas. Mi papel en proyecto es desarroladora FullStack.
+                            "El momento es ahora ese es mi lema"
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/geo.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Geovanni Olmos</h5>
+                        <p class="card-text">
+                            Edad: 29 años
+                            Ingeniero en control y autom.
+                            Dato curioso: Sino como me pongo de mal humor.
+                            Papel en el proyecto: web developer fullstack
+                            Lema: "No tienes ningún problema. Solo crees que tienes un problema"
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/KarenLoy.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Karen Loy</h5>
+                        <p class="card-text">
+                            Desarrolladora fullstack Java, 19 años, me gusta mucho el deporte y los retos. Podria
+                            comer todo el dia. <br>
+                            Papel en el proyecto: Desarrollador
+                            <em>El unico limite, eres tu mismo.</em>
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/Betsie.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Betsie Hernandez</h5>
+                        <p class="card-text">
+                            My nombre es Betsie Hernandez, tengo 30 años y actualmente curso un bootcamp para ser
+                            Desarrolladora Java Full Stack, soy fan de aprender cosas nuevas conocer personas y
+                            lugares.
+                            My lema es: "No tengas miedo al cambio".
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/Omar.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Omar Fernando Padilla</h5>
+                        <p class="card-text">
+                            Tengo 28 años, soy Ingeniero en Electronica. <br> En mis tiempos libres me gusta
+                            aprender de mecanica automotriz, escuchar musica y ver peliculas. <br> Mi papel en el
+                            proyecto es desarrollador Java FullStack. <br> Mi lema seria "Hacer bien las cosas a la
+                            primera".
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="col-md-4 col-sm-6 mt-5">
+                <div class="card">
+                    <img class="imgprofile" src="img/avatar2/Sussana.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Susana Barajas</h5>
+                        <p class="card-text">
+                            Mi nombre es Susana soy egresada de la Lic. en Administración con énfasis en Gerencia
+                            Internacional, extrovertida, autodidacta y curiosa por naturaleza. Mi función en el
+                            proyecto fue como desarrolladora Java fullstack. Uno de mis lemas favoritos es: "El
+                            emprendurismo va más allá de la profesión".
+                        </p>
+                        <a href="" class=""><i class="fab fa-linkedin iconos"></i></a>
+                        <a href="" class=""><i class="fab fa-github-square iconos"></i></a>
+                    </div>
+                </div>
+            </div><br>
+        </div>
+
+    </main>
+    <!-- <section class="interior-design">
         <div class="container expanded">
             <div class="row">
                 <div class="col-lg-6">
@@ -177,10 +428,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <section class="what-they-say">
+    <!-- <section class="what-they-say">
         <div class="container expanded">
             <div class="row">
                 <div class="col-lg-12">
@@ -267,7 +518,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="call-to-action">
@@ -381,6 +632,13 @@
         </div>
     </footer>
 
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+crossorigin="anonymous"></script>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
