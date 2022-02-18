@@ -7,6 +7,21 @@
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900); }
 
+  .iconos{
+    font-size: 3rem;
+    color: black;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.card{
+  height: 101%;
+}
+
+.card-text{
+  height: 67%;
+}
+
 .fa,
 .fas,
 .fa-solid,
