@@ -22,6 +22,27 @@
   height: 67%;
 }
 
+/*ESTILOS DEL FORMULARIO*/
+.formulario__mensaje{ /*mensaje oculto "Campos Incompletos" para formulario Registro de Usuario*/
+  display:none;
+}
+
+.formulario__mensaje-exito{ /*mensaje oculto "Enviado con exito" para formulario Registro de Usuario*/
+  display:none;
+}
+
+.formulario__mensaje-activo{ /*desocultar mensaje "Campos Incompletos"*/
+  display:block;
+}
+
+.formulario__mensaje-exito-activo{ /*desocultar mensaje "Enviado con exito"*/
+display: block;
+}
+
+.formulario__validacion-inactivo{
+  opacity: 0;
+}
+
 .fa,
 .fas,
 .fa-solid,
