@@ -160,3 +160,5 @@ addItem({
     'ubicacion':'Justo Sierra no.145',
     'descripcion':'Habitacion de lugo con buena ubicacion'
 })
+
+
