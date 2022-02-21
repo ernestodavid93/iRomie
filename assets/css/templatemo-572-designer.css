@@ -8,6 +8,7 @@ body {
   max-width: 1320px;
 }
 
+
 @media (min-width: 768px) {
   .expanded {
     width: 100%;
@@ -604,7 +605,7 @@ section.whats-trending .right-image::after {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
-  background: url(../images/whats-trending-right-image.png);
+  background: url(/iRoomie/assets/images/casa.jpg);
   content: '';
 }
 
