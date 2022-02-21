@@ -1,13 +1,7 @@
-/*
-
-TemplateMo 572 Designer
-
-https://templatemo.com/tm-572-designer
-
-*/
 
 body {
   font-family: 'Poppins', sans-serif;
+ 
 }
 
 .expanded {
@@ -198,7 +192,7 @@ section {
 
 @media (min-width: 992px) {
   .navbar-nav {
-    background-color: transparent;
+    background-color:transparent;
     border-radius: 0px;
     padding: 0px;
     margin-top: 0px;
@@ -458,12 +452,12 @@ section.explore-work .right-content ul li ul.info li span {
   float: none !important;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   section.explore-work .right-content ul li ul.info li span {
     display: inline-block;
     float: left !important;
   }
-}
+} */
 
 section.explore-work .right-content ul li ul.info li span svg {
   margin-right: 8px;
@@ -873,9 +867,9 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 
-.contactanos_img {
+.view_img {
   background-color: #333;
-  background-image: url(../images/house.jpg);
+  background-image: url(/img/Home2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
