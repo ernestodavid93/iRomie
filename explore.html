@@ -96,7 +96,7 @@
                   </form>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
-                  <a class="dropdown-item" href="registroUsuario.html">¿Nuevo usuario? Regístrate</a>
+                  <a class="dropdown-item" href="userRegister.html">¿Nuevo usuario? Regístrate</a>
                   <p style="text-align: center; font-weight: bold;">O</p>
                   <button type="button" class="btn btn-primary">Acceder con Facebook</button>
                   <button type="button" class="btn btn-danger">Acceder con Google</button>
@@ -125,13 +125,19 @@
             <main>
 
                 <div class="container text-justify">
-                    <form>
+                    <form id="new">
                         <br><br>
                         
+                        <div >
+                            <label for="name" class="label">Nombre</label>
+                            <br>
+                            <input class="input" type="text" placeholder="Nombre de propiedad" id="name">
+                        </div>
+
                         <div class="form-group">
                         <label class="label">Tipo de propiedad</label>
                         <br>
-                        <select class="input" id="exampleFormControlSelect1" placeholder="Seleccione">
+                        <select class="input" id="categoria" placeholder="Seleccione">
                             <option>-Seleccione-</option>
                             <option>Casa</option>
                             <option>Departamento</option>
@@ -142,53 +148,82 @@
                         <div >
                             <label for="" class="label">Telefono</label>
                             <br>
-                            <input class="input" type="text" placeholder="número de 10 dígitos">
+                            <input class="input" type="text" id="telefono" placeholder="número de 10 dígitos">
                         </div>
                         
                        
                         <div class="">
                         <label for="" class="label">Costo</label>
                         <br>
-                        <input class="input" type="text" placeholder="$ mensualidad">
+                        <input class="input" type="text" id="costo" placeholder="$ mensualidad">
                         </div>
                     
                      
                         <div class="form-group">
                             <label for="" class="label">Ubicación</label>
                             <br>
-                            <input class="input" type="text" placeholder="Dirección">
+                            <input class="input" type="text" id="ubicacion" placeholder="Dirección">
                         </div>
                     
+                        <div class="form-group">
+                            <label class="label">Numero de habitaciones</label>
+                            <br>
+                            <select class="input" id="habitaciones" placeholder="Seleccione">
+                                <option>-Seleccione-</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4+</option>
+                            </select>
+                            </div>
                       
                         <div class="form-group">
-                        <label for="" class="label">Numero de habitaciones</label>
+                        <label for="" class="label">Reglas de casa</label>
                         <br>
-                        <input class="input" type="text" placeholder="Número de habitaciones">
+                        <input class="input" type="text" id="reglas" placeholder="Reglas de la casa">
                         </div>
+
+                        <div class="form-group">
+                            <label for="" class="label">Servicios</label>
+                            <br>
+                            <input class="input" type="text" id="servicios" placeholder="Servicios">
+                            </div>
                         
                         <div class="form-group">
                         <label for="" class="label">Descripcion</label>
                         <br>
-                        <textarea class="input" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="input" id="descripcion" rows="3"></textarea>
                         </div>
                     
                     
                         <div class="custom-file">
                             <label for="" class="label">Subir imagenes</label>
                             <br>
-                            <input type="file" class="input" id="customFileLang" lang="es">
+                            <input type="file" class="input" id="fotos" lang="es">
                             <label class="label" for="customFileLang">Seleccionar Archivo</label>
                         </div>
                         
                         <br><br><br>
                         <div class="col">
-                            <button class="button">Enviar</button>
+
+                            <input type="submit" class="button" value="Enviar"></input>
                         </div>
                     
                         <br>
                     </form>
                 </div>
-            
+
+                <div id="tabla-info">
+                    <table class="table">
+                        <thead>
+
+                        </thead>
+                        <tbody id="propiedades">
+
+                        </tbody>
+                    </table>
+                </div>
+                <button id="mostrar">Mostrar tabla</button>
             </main>
 
         </div>
@@ -266,6 +301,7 @@ crossorigin="anonymous"></script>
 integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
 crossorigin="anonymous"></script>
 
+
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -277,6 +313,7 @@ crossorigin="anonymous"></script>
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/property.js"></script>
   <script>
     setTimeout(function(){
         $('.loader').fadeToggle();

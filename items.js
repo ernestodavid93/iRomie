@@ -1,6 +1,52 @@
+var left=1;
+var right=4;
+
+function show()
+{
+for(i=left;i<=right;i++)
+{
+document.getElementById("c" + i).style.display="inline-block";
+}
+}
+
+function moveLeft()
+{
+if(left<=6 && right<=10)
+{
+
+document.getElementById("c"+left).style.display="none";
+left+=1;
+right+=1;
+
+for(i=left;i<=right;i++)
+{
+document.getElementById("c" + i).style.display="inline-block";
+}
+}else
+return;
+}
+
+
+function moveRight()
+{
+if(left>=2 && right>=4)
+{
+document.getElementById("c"+right).style.display="none";
+left -=1;
+right -=1;
+
+for(i=left;i<=right;i++)
+{
+document.getElementById("c" + i).style.display="inline-block";
+}
+}
+else
+return;
+}
+
 function addItem(item){
     const itemHTML =
-    '<div class="hijo card cardCard" id="c'+item.cartNu +'" style="width: 18rem;">\n'+
+    '<div class="hijo card cardCard" id="c'+item.cartNu +'" style="width: 19rem;">\n'+
     '   <img src="'+item.foto +'" class="cardImg img-fluid" alt="...">\n'+
     '    <div class="card-body">\n'+
     '      <h5 class="card-title">Precio '+item.precio+'</h5>\n'+
@@ -16,8 +62,8 @@ function addItem(item){
     '            </div>\n'+
     '        </div>\n'+
     '        <br>\n'+
-    '        <p>'+item.ubicacion+'</p> \n'+
-    '    <p class="card-text">'+item.descripcion+'</p>\n'+
+    '        <p class="fas fa-map-marker-alt">' +item.ubicacion+'</p> \n'+
+    '    <p class="card-text fas fa-house">'+item.descripcion+'</p>\n'+
     '    <p class="cardL"><small >Last updated 3 mins ago</small></p>\n'+
     '    <a href="./view.html" class="btn btn-primary">Ver mas</a>\n'+
     '    </div>\n'+
@@ -160,5 +206,3 @@ addItem({
     'ubicacion':'Justo Sierra no.145',
     'descripcion':'Habitacion de lugo con buena ubicacion'
 })
-
-
