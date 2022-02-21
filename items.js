@@ -62,8 +62,8 @@ function addItem(item){
     '            </div>\n'+
     '        </div>\n'+
     '        <br>\n'+
-    '        <p class="fas fa-map-marker-alt">' +item.ubicacion+'</p> \n'+
-    '    <p class="card-text fas fa-house">'+item.descripcion+'</p>\n'+
+    '        <p class="">' +item.ubicacion+'</p> \n'+
+    '    <p class="card-text">'+item.descripcion+'</p>\n'+
     '    <p class="cardL"><small >Last updated 3 mins ago</small></p>\n'+
     '    <a href="./view.html" class="btn btn-primary">Ver mas</a>\n'+
     '    </div>\n'+

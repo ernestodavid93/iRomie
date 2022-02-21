@@ -1691,7 +1691,7 @@ section.contact-us-page .right-info ul li span {
 /*Home*/
 
 /*Slider*/
-/* 
+
 .padre {
   display: flex;
   justify-content: center;
@@ -1807,7 +1807,7 @@ section.contact-us-page .right-info ul li span {
   100% {
     opacity: 1;
   }
-} */
+}
 
 /*Registro*/
 
@@ -1840,4 +1840,25 @@ background-color: #ff8f1f;
 color: black;
 /* text-shadow: black 0.1em 0.1em 0.2em; */
 
+}
+
+/*ESTILOS DEL FORMULARIO*/
+.formulario__mensaje{ /*mensaje oculto "Campos Incompletos" para formulario Registro de Usuario*/
+  display:none;
+}
+
+.formulario__mensaje-exito{ /*mensaje oculto "Enviado con exito" para formulario Registro de Usuario*/
+  display:none;
+}
+
+.formulario__mensaje-activo{ /*desocultar mensaje "Campos Incompletos"*/
+  display:block;
+}
+
+.formulario__mensaje-exito-activo{ /*desocultar mensaje "Enviado con exito"*/
+display: block;
+}
+
+.formulario__validacion-inactivo{
+  opacity: 0;
 }
