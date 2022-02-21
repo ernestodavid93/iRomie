@@ -1,2 +1,2 @@
 var storedList = JSON.parse(localStorage.getItem("user"));
-console.log(storedList)
+console.log(storedList);
