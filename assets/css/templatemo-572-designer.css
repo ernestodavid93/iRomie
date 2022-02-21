@@ -1,13 +1,7 @@
-/*
-
-TemplateMo 572 Designer
-
-https://templatemo.com/tm-572-designer
-
-*/
 
 body {
   font-family: 'Poppins', sans-serif;
+ 
 }
 
 .expanded {
@@ -197,7 +191,7 @@ section {
 
 @media (min-width: 992px) {
   .navbar-nav {
-    background-color: transparent;
+    background-color:transparent;
     border-radius: 0px;
     padding: 0px;
     margin-top: 0px;

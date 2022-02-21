@@ -1,29 +1,23 @@
 var newUsrList = [];
 
-function addUsr(inombre, itelefono, iemail, ipassword) {
 
-    var newUsr = {
+
+function addUsr(inombre, itelefono, iemail, ipassword) {
+    this.nombre = inombre;
+    this.telefono = itelefono;
+    this.emal = iemail;
+    this.password = ipassword;
+        
+        newUsr = {
         nombre: inombre,
         telefono: itelefono,
         email: iemail,
         password: ipassword
+              
     };
-
+    
     newUsrList.push(newUsr);
-    console.log(newUsr);
-    // localStorageUsr(newUsrList)
-}
-// function getUsrList() {
-//     var storedList = localStorage.getItem('localUsrList');
-//     if (storedList == null) {
-//         newUsrList = [];
-//     }
-//     else {
-//         newUsrList = JSON.parse(storedList);
-//     }
-//     return newUsrList;
-// }
+    localStorage.setItem("user", JSON.stringify(newUsrList))
+        
 
-// function localStorageUsr(iList) {
-//     localStorage.setItem('localStorageUsr', JSON.stringify(iList));
-// };
+};
