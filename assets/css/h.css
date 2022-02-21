@@ -257,6 +257,7 @@ h5 {
   width: 200px;
 }
 
+<<<<<<< HEAD
 .overlay {
   position: absolute;
   left: 50%;
@@ -300,6 +301,17 @@ h5 {
 }
 
 
+=======
+/* inicio animación logo*/
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+>>>>>>> f4e2e6eeb9566c494d10c6f2902d7937e7277c98
 
 
 /* inicio animacion nav */
