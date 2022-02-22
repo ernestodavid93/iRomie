@@ -19,10 +19,6 @@
 <!--Font awesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&family=Roboto:ital,wght@0,900;1,900&family=Source+Serif+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
-   
 
 
     <!-- Additional CSS Files -->
@@ -56,7 +52,7 @@
                     <a class="nav-link" href="explore.html">Registro</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="contact.html">Contáctanos</a>
+                  <a class="nav-link active" href="contact.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</a>
@@ -114,49 +110,43 @@
 
     </header>
 
-
-
-<!--CONTACTANOS-->
     <div class="page-banner change-name">
-            <div class="container">
+        <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 offset-lg-3">
                     <div class="header-text">
-                        <h2><em>Contáctanos</em></h2>
-                        <p>“Siéntete libre de contactarnos a cualquier hora, <br> te responderemos lo más pronto posible.”</p>
-                        <img src="/img/datoscontacus.png">
-                      
+                        <h2><em>Contactanos</em></h2>
+                        <p>En este apartado comunicanos tus dudas, aclaraciones, inquietudes. Queremos escucharte.</p>
                     </div>
+                </div>
             </div>
-            <div class="col"> 
-            <div class="registro-box">
-                <div class="container text-justify left">       
-                    <form onsubmit="return false">
 
+            <section>
+                <div class="container text-justify left">
+                    <br>
+                    <div class="container">
+                        <form onsubmit="return false">
                             <div class="form-item">
-                                <label for="labelcontact">Nombre:</label>
+                                <label  class="label_con" for="">Nombre:</label>
                                 <br>
-                                <input type="text" class="field" placeholder="Nombre" required>
-                            </div> 
-                            <div class="form-item">
-                                <label for=""> Teléfono:</label>
-                                <br>
-                                <input type="text" class="field" placeholder="000-0000-000" required>
+                                <input class="input_con" type="text" name="nombre" placeholder="rent-a-home" required>
                             </div>
                             <div class="form-item">
-                                <label for="">Correo:</label>
+                                <label class="label_con" for=""> Teléfono:</label>
                                 <br>
-                                <input type="text" class="field" placeholder="user@gmail.com" required>
+                                <input class="input_con" type="text" name="telefono" placeholder="12 34 56.." required>
                             </div>
                             <div class="form-item">
-                                <label for="">Mensaje:</label>
+                                <label class="label_con" for="">Correo:</label>
+                                <br>
+                                <input class="input_con" type="text" name="correo" placeholder="user@gmail.com.." required>
+                            </div>
+                            <div class="form-item">
+                                <label class="label_con" for="">Mensaje:</label>
                                 <br>
                                 <input class="input_con" type="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required>
                             </div>
                             <br>
-                            <div class="alert alert-success formulario__mensaje-exito" role="alert" class="formulario__mensaje-exito">
-                                Enviado con exito!
-                              </div>
                             <button class="button_con">Enviar</button>
                         </form>
                     </div>
@@ -164,8 +154,6 @@
             </section>
         </div>
     </div>
-
-    
 
     <footer class="no-margin-footer" style="text-align:center;">
         <div class="container">
@@ -230,7 +218,6 @@
         </div>
     </footer> 
 
-   
 <script src="/assets/js/email.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -264,15 +251,3 @@ crossorigin="anonymous"></script>
 
 </body>
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

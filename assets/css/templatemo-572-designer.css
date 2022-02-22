@@ -880,7 +880,7 @@ footer .sub-footer a.scroll-to-top:hover {
 
 @media (min-width: 768px) {
   .page-banner {
-    padding: 110px 10px;
+    padding: 180px 0px;
   }
 }
 
@@ -891,13 +891,13 @@ footer .sub-footer a.scroll-to-top:hover {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
   .page-banner h2 {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
@@ -907,11 +907,7 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 .page-banner p {
-  color: rgb(226, 181, 181);
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Serif', sans-serif;
-  font-family: 'Source Serif Pro', serif;
-font-size: 20px;
+  color: black;
 }
 
 .services {
@@ -1620,58 +1616,8 @@ section.contact-us-page .right-info ul li span {
   background-color: #ff8f1f;
 }
 
-
-
 /*Contactanos*/
-.labelcontact{
-  text-align: center;
-}
 
-.registro-box{
-	max-width: 500px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-}
-
-.field{
-	width: 430px;
-	border: 1px solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(229, 212, 235, 0.542);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
-  color: #000000c4;
-}
-
-.field:hover{
-	background-color: rgba(212, 170, 33, 0.412);
-}
-
-textarea{
-	min-height: 100px;
-}
-
-.botonenviar {
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
-	color: rgba(0, 0, 0, 0.576);
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
-}
-
-.botonenviar:hover{
-    background-color: #ff565b;
-}
 
 .pages-banner {
   background-color: #333;
@@ -1704,11 +1650,7 @@ textarea{
 }
 
 .pages-banner p {
-  color: rgb(0, 0, 0);
-}
-
-.header-text p {
-color:#2a2a2a
+  color: black;
 }
 
 /* Registro */
@@ -1898,25 +1840,4 @@ background-color: #ff8f1f;
 color: black;
 /* text-shadow: black 0.1em 0.1em 0.2em; */
 
-}
-
-/*ESTILOS DEL FORMULARIO*/
-.formulario__mensaje{ /*mensaje oculto "Campos Incompletos" para formulario Registro de Usuario*/
-  display:none;
-}
-
-.formulario__mensaje-exito{ /*mensaje oculto "Enviado con exito" para formulario Registro de Usuario*/
-  display:none;
-}
-
-.formulario__mensaje-activo{ /*desocultar mensaje "Campos Incompletos"*/
-  display:block;
-}
-
-.formulario__mensaje-exito-activo{ /*desocultar mensaje "Enviado con exito"*/
-display: block;
-}
-
-.formulario__validacion-inactivo{
-  opacity: 0;
 }
