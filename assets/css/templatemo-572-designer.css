@@ -316,6 +316,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 .navbar-light .navbar-toggler {
   background-color: #fff;
+  z-index: 222;
 }
 
 button:focus:not(:focus-visible) {
