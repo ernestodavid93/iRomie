@@ -1,18 +1,13 @@
-/*
-
-TemplateMo 572 Designer
-
-https://templatemo.com/tm-572-designer
-
-*/
 
 body {
   font-family: 'Poppins', sans-serif;
+ 
 }
 
 .expanded {
   max-width: 1320px;
 }
+
 
 @media (min-width: 768px) {
   .expanded {
@@ -181,10 +176,10 @@ section {
 }
 
 .main-navigation {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  padding: 0px;
-  -webkit-transition: all .3s;
+  /* padding: 0px; */
+  /* -webkit-transition: all .3s; */
   transition: all .3s;
 }
 
@@ -193,11 +188,14 @@ section {
   border-radius: 7.5px;
   padding: 10px 20px;
   margin-top: 10px;
+
 }
 
 @media (min-width: 992px) {
   .navbar-nav {
-    background-color: transparent;
+    
+
+    background-color:transparent;
     border-radius: 0px;
     padding: 0px;
     margin-top: 0px;
@@ -213,24 +211,24 @@ header.nav-scrolled .main-navigation {
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-header.nav-scrolled .main-navigation .navbar-brand {
+/* header.nav-scrolled .main-navigation .navbar-brand {
   padding: 0px;
 }
 
 header.nav-scrolled .main-navigation .navbar-nav {
   margin-top: 0px;
-}
+} */
 
-header.nav-scrolled .main-navigation .navbar-nav .nav-item .nav-link {
+/* header.nav-scrolled .main-navigation .navbar-nav .nav-item .nav-link {
   border-top: none;
   padding: 8px 15px;
   font-weight: 300;
   letter-spacing: 0.5px;
-}
+} */
 
 @media (min-width: 576px) {
   header.nav-scrolled .main-navigation .navbar-nav .nav-item .nav-link {
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 
@@ -251,7 +249,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 @media (min-width: 992px) {
   .navbar-light {
-    padding: 0px;
+    /* padding: 0px; */
   }
 }
 
@@ -318,6 +316,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 .navbar-light .navbar-toggler {
   background-color: #fff;
+  z-index: 222;
 }
 
 button:focus:not(:focus-visible) {
@@ -357,11 +356,14 @@ button:focus:not(:focus-visible) {
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 25px;
+  z-index: -100;
 }
 
 .main-banner h2 em {
+
   font-style: normal;
   color: #ff565b;
+  z-index: -100;
 }
 
 .search-form {
@@ -610,7 +612,7 @@ section.whats-trending .right-image::after {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
-  background: url(../images/whats-trending-right-image.png);
+  background: url(/iRoomie/assets/images/casa.jpg);
   content: '';
 }
 
@@ -1846,3 +1848,121 @@ color: black;
 /* text-shadow: black 0.1em 0.1em 0.2em; */
 
 }
+
+
+/* inicio animación logo*/
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+
+/* inicio animacion nav */
+ul li a:hover{
+    transform: scale(1.2);
+    color: rgb(255, 255, 255,255);
+}
+
+ul li a.nav-link::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(255, 99, 71, 0.747);
+    width: 110%;
+    height: 100%;
+    transition: transform .3s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1; 
+   border-radius: 8%;
+}
+
+ ul li a:hover::before{
+    transition: transform .4;
+    transform-origin: left;
+    transform:scale(.9)
+} 
+
+
+/* fin animacion nav */
+
+.nav-link{
+  color: #252525;
+  transition: .5s;
+  margin: 15px;
+}
+.nav-link:hover{
+  color: aliceblue;
+  transform: scale(1.2);
+}
+
+/*Logo 2 inicio*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+#text1 {
+display: flex;
+  position: absolute;
+  width: 450px;
+  left: 5%;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.p {
+  font-size: 50px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  
+}
+
+.word{
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: tomato;
+}
+
+.belize {
+  color: tomato;
+}
+
+.ft{
+  color: tomato;
+  font-size: 50px;
+}
+
+
+
+/*Logo 2 fin*/
