@@ -43,7 +43,7 @@ document.getElementById("c" + i).style.display="inline-block";
 else
 return;
 }
-
+//display: inline-block
 function addItem(item){
     const itemHTML =
     '<div class="hijo card cardCard" id="c'+item.cartNu +'" style="width: 19rem;">\n'+
