@@ -247,11 +247,11 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
   padding: 10px 0px;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .navbar-light {
-    /* padding: 0px; */
+    /* padding: 0px; 
   }
-}
+} */
 
 .navbar-light .navbar-brand {
   padding: 0px 0px 0px 0px;
@@ -277,7 +277,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-item {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     border-bottom: none;
   }
 }
@@ -1906,12 +1906,13 @@ ul li a.nav-link::before{
 
 #text1 {
 display: flex;
-  position: absolute;
+/*position: absolute*/
   width: 450px;
-  left: 5%;
+  right: 5%;
+   /*left: 5%;*/
   height: 40px;
-  top: 50%;
-  margin-top: -20px;
+  top: 15%; /*top: 50%*/
+  margin-top: 10px;
 }
 
 .p {
@@ -1931,7 +1932,7 @@ display: flex;
 .letter {
   display: inline-block;
   position: relative;
-  float: left;
+ /* float: left;*/
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
