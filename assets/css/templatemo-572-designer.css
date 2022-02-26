@@ -14,7 +14,7 @@ body {
     width: 100%;
     overflow: hidden;
     max-width: 100%;
-    padding: 0px 7%;
+    padding: 0px 4%;
   }
 }
 
@@ -211,13 +211,13 @@ header.nav-scrolled .main-navigation {
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* header.nav-scrolled .main-navigation .navbar-brand {
+header.nav-scrolled .main-navigation .navbar-brand {
   padding: 0px;
 }
 
 header.nav-scrolled .main-navigation .navbar-nav {
   margin-top: 0px;
-} */
+}
 
 /* header.nav-scrolled .main-navigation .navbar-nav .nav-item .nav-link {
   border-top: none;
@@ -1051,8 +1051,9 @@ section.interior-design .right-content .accordion-body {
   padding: 100px 0px;
 }
 
+/*Editar Tarjetas*/
 .what-they-say .testimonial-item {
-  padding: 60px;
+  padding: 20px;
   margin: 20px;
   z-index: 1;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -1144,15 +1145,18 @@ section.interior-design .right-content .accordion-body {
   background-color: #ff565b;
 }
 
+/*cinta negra de contactanos*/
 .call-to-action {
   background-color: #2a2a2a;
-  margin-top: 120px;
   padding: 45px 0px;
+  margin: -5%;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 .call-to-action h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0px 0px 20px 0px;
