@@ -121,7 +121,6 @@
 
     <div class="view_img change-name"><!--Estilo Page-->
 <!--INICIO DE INFORMACION-->    
-<!-- col1 -->
 <br><br><br>
     <div class="container">
   <div class="row">
@@ -136,7 +135,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="./img/imgView/img_1.jpg" alt="First slide">
+      <div id="item-img"></div> <!--recibir foto de JSON-->
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="./img/imgView/img_2.jpg" alt="Second slide">
@@ -155,36 +154,17 @@
   </a>
 </div>
 <!-- end carrousel -->
+
   <br>
-  
+</div> <!-- co8 -->
 
 
-<!-- col2 -->
-    </div>
-    <div class="col-md-4">
-      <div class = "nombre">
-        <h4>Casa en Renta</h4><br>
-        <h4 class = "precio"> $6000.00</h4><br>
-        <h5 class = "especificaciones"> Especificaciones</h5>
-        
-        <div class="container">
-            <div class="row">
-                 <div class="col">
-                <i class="fas fa-bed"> 2</i><br><br>
-                <i class="fas fa-bath"> 2</i><br>
-            </div>
-             <div class="col">
-                <i class="fas fa-ruler-combined"> 750m2</i><br><br>
-                <i class="fas fa-paw"> Si</i>
-        </div>
-    </div>
-
-      </div>
+    <div class="col-md-4"> <!--TODA LA SECCION DERECHA-->
+    
+    <div id="list-items"> <!--Recibir JSON-->
       
-      
+  </div> <!--Recibir JSON-->
 
-    </div>
-   <div>
      <br>
   <button  type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contactar</button>
 
@@ -219,12 +199,12 @@
       </div>
     </div>
   </div>
+</div> <!--contactar-->
+
+</div> <!--FIN TODA LA SECCION DERECHA-->
 </div>
 </div>
-</div>
-</div>
-</div>
-<!--FIN DE INFORMACION-->
+<!--FIN DE INFORMACION (todo el container con la imagen)-->
     </div><!--div estilo PAGE -->
 
 <!-- footer -->
@@ -302,6 +282,7 @@ crossorigin="anonymous"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/view.js"></script> <!--JSON DE LA PAGINA-->
 
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
