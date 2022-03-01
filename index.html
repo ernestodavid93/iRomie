@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
 
-<!--======CSS Slider=======================================-->
+  <!--======CSS Slider=======================================-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!--Botones para el slider, no mover de aqui, si se mueven a la hoja de estilos entran en conflicto-->
   <style>
@@ -210,10 +210,10 @@
               </div>
               <div class="col-lg-4">
                 <fieldset>
-                  <label for="chooseplan" class="form-label">Elige la ubicacion</label>
+                  <label for="chooseplan" class="form-label">Elige la ubicación</label>
                   <select name="Plan" class="form-select" aria-label="Default select example" id="chooseCategory"
                     onChange="this.form.click()">
-                    <option selected>Ubicacion</option>
+                    <option selected>Ubicación</option>
                     <option value="Standard">Guadalajara</option>
                     <option value="Professional">Zapopan</option>
                     <option value="Golden">Tlajomulco</option>
@@ -240,7 +240,7 @@
     <div class="container expanded">
 
       <div class="section-heading text-center">
-        <h2>Explora una mejor experiencia con <br><em>Filtros detallados</em>.</h2>
+        <h2>Explora una mejor experiencia con <br><em>Filtros detallados</em></h2>
 
         <!--Inicio de mas filtros-->
         <section>
@@ -390,6 +390,46 @@
 
 
 
+
+
+
+
+    </div>
+  </section>
+
+
+  <section class="whats-trending">
+    <div class="container expanded">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h2>Encuentra aquí<br><em>nuestras opciones disponibles</em></h2>
+          </div>
+          <div class="left-content">
+            <p>Tenemos muchas opciones para tí, encuentra tu espacio ideal.</p>
+            <div class="primary-button">
+              <a href="#">Descubre más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="right-image">
+            <div class="thumb">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <h4><a href="#">Espacios cómodos y seguros</a></h4>
+                  <span>Encuentra tu roomie ideal</span>
+                </div>
+              </div>
+              <img src="assets/images/rentaindex.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
 <!--Comienza slider de las tarjetas-->
 <section>
   
@@ -400,6 +440,29 @@
 
   <!--Se manda llamar el Jason de las tarjetas mediante el ID-->
   <ul id="listItems" class="autoWidth cS-hidden"></ul>
+
+</section>
+<!--Termina slider de las tarjetas-->
+
+<div class="modal" tabindex="-1" id="productModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productTitleModal">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="productBodyModal">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
 
 </section>
 <!--Termina slider de las tarjetas-->
@@ -429,7 +492,7 @@
               <div class="about-widget ">
                   <span class="p">i</span ><span class = "ft">ROOMIE</span>
                   <p>En iRoomie estamos comprometidos con tu información, y nos interesa tu opinión. <br> 
-                  Para dudas, quejas o sugerencias, comunicate con nosotros.
+                  Para dudas, quejas o sugerencias, comunícate con nosotros.
                   </p>
               </div>
           </div>
@@ -488,15 +551,22 @@
 
 <!-- Scripts -->
 
+<<<<<<< HEAD
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+=======
+<!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+>>>>>>> Fetch
   <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/logo.js"></script>
+<<<<<<< HEAD
  
 <!--======JS Slider=========================================-->
 <script src="./assets/js/items.js"></script>
@@ -527,7 +597,41 @@
   });
 </script>
 <!--======JS Slider=========================================-->
+=======
+>>>>>>> Fetch
 
+  <!--======JS Slider=========================================-->
+<!-- <script src="./assets/js/items.js"></script> -->
+<script src="./assets/js/products.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<script>
+        $(document).ready(function() {
+     
+        $('.autoWidth').removeClass('cS-hidden');
+        let slider = $('.autoWidth').lightSlider({
+
+        
+        loop:true,
+        autoWidth:true,
+        enableTouch:true,
+        
+
+        onSliderLoad: function() {
+            $('.autoWidth').removeClass('cS-hidden');
+        } 
+
+    });
+    slider.refresh();  
+  });
+</script>
+<!--======JS Slider=========================================-->
+ 
+<!--Terminan Scripts-->
 </body>
 
 </html>

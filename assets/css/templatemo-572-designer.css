@@ -247,7 +247,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 /* @media (min-width: 992px) {
   .navbar-light {
-    /* padding: 0px; 
+    padding: 0px;
   }
 } */
 
@@ -275,7 +275,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-item {
-    /*margin-left: 20px;*/
+    margin-left: 20px;
     border-bottom: none;
   }
 }
@@ -1778,13 +1778,12 @@ ul li a.nav-link::before{
 
 #text1 {
 display: flex;
-/*position: absolute*/
+  position: absolute;
   width: 450px;
-  right: 5%;
-   /*left: 5%;*/
+  left: 5%;
   height: 40px;
-  top: 15%; /*top: 50%*/
-  margin-top: 10px;
+  top: 50%;
+  margin-top: -20px;
 }
 
 .p {
@@ -1804,7 +1803,7 @@ display: flex;
 .letter {
   display: inline-block;
   position: relative;
- /* float: left;*/
+  /* float: left; */
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
@@ -1855,6 +1854,7 @@ display: flex;
   letter-spacing: 0.5px;
   line-height: 34px;
 }
+<<<<<<< HEAD
 
 .slider-heading h3 span{
   color: #6e6e73;
@@ -1902,6 +1902,55 @@ display: flex;
   }
 }
 
+=======
+
+.slider-heading h3 span{
+  color: #6e6e73;
+}
+
+.product-box{
+  color: black;
+  width: 20rem;
+  height: 95%;
+  margin: 30px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-box:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.product-box img{
+  width: 100%;
+  height: 210px;
+}
+/*Aqui se hacen responsive las tarjetas-----------------------------------------*/
+@media(max-width:600px){
+  .slider-heading h3{
+      font-size: 21px;
+  }
+  .product-box{
+      width: 310px;
+      margin: 10px;
+      box-sizing: border-box;
+  }
+  .product-box img{
+      width: 100%;
+      height: 190px;
+      padding: 0px;
+  }
+  .product-box strong{
+      font-size: 21px;
+  }
+}
+
+>>>>>>> Fetch
 @media(max-width:400px){
   .product-box{
       width: 280px;
