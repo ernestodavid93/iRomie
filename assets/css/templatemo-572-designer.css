@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Poppins', sans-serif;
  
@@ -7,7 +6,6 @@ body {
 .expanded {
   max-width: 1320px;
 }
-
 
 @media (min-width: 768px) {
   .expanded {
@@ -249,7 +247,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 /* @media (min-width: 992px) {
   .navbar-light {
-    /* padding: 0px; 
+    padding: 0px;
   }
 } */
 
@@ -277,7 +275,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-item {
-    /*margin-left: 20px;*/
+    margin-left: 20px;
     border-bottom: none;
   }
 }
@@ -873,7 +871,6 @@ footer .sub-footer a.scroll-to-top:hover {
   text-align: center;
 }
 
-
 .view_img {
   background-color: #333;
   background-image: url(/img/Home2.jpeg);
@@ -884,14 +881,11 @@ footer .sub-footer a.scroll-to-top:hover {
   text-align: center;
 }
 
-
 @media (min-width: 768px) {
   .page-banner {
     padding: 180px 0px;
   }
 }
-
-
 
 .page-banner h2 {
   color: #ffffff;
@@ -1599,7 +1593,8 @@ section.contact-us-page .right-info ul li span {
 
 }
 
-
+/*Causa conflicto con el slider*/
+/* 
 .left{
   width: 250px;
   background: none;
@@ -1607,7 +1602,7 @@ section.contact-us-page .right-info ul li span {
   margin: 10px;
   padding: 0px 0px 5px 20px;
 
-}
+} */
 
 .label_con{
   margin: 0px 200px 0px 0px;
@@ -1695,129 +1690,8 @@ section.contact-us-page .right-info ul li span {
 .pagess-banner p {
   color: black;
 }
-/*Home*/
-
-/*Slider*/
-/* 
-.padre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-}
-
-.hijo {
-  width: 20%;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: none; 
-}
-
-#slLeft,
-#slRight {
-  margin-left: 12px;
-  width: 3%;
-  display: inline-block;
-}
-#slLeft button,
-#slRight button {
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 30px;
-}
-
-.card  {
-  height: 90%;
-  margin: 20px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  transition: all 400ms ease;
-}
-
-.cardCard  {
-  height: 95%;
-  margin: 30px;
-  border-radius: 40px;
-  overflow: hidden;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  transition: all 400ms ease;
-}
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-} 
-
-.cardCard img {
-  width: 100%;
-  height: 210px;
-} 
-
-.card-text {
-  height: 67%;
-}
-
-.cardImg {
-  height: 200px;
-  width: 200px;
-}
-
-.overlay {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(92, 95, 236, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inf-btn {
-  width: 160px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  color: #252525;
-  font-weight: 700;
-  letter-spacing: 1px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-}
-
-.inf-btn:hover {
-  color: #ffffff;
-  background-color: #f15fa3;
-  transition: all ease 0.3s;
-}
-
-.overlay {
-  visibility: hidden;
-}
-
-.slide-img:hover .overlay {
-  visibility: visible;
-  animation: fade 0.5s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
 
 /*Registro*/
-
 
 .input{
   width: 250px;
@@ -1832,8 +1706,6 @@ section.contact-us-page .right-info ul li span {
 .label{
 font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 .button{
 width: 100px;
@@ -1906,13 +1778,12 @@ ul li a.nav-link::before{
 
 #text1 {
 display: flex;
-/*position: absolute*/
+  position: absolute;
   width: 450px;
-  right: 5%;
-   /*left: 5%;*/
+  left: 5%;
   height: 40px;
-  top: 15%; /*top: 50%*/
-  margin-top: 10px;
+  top: 50%;
+  margin-top: -20px;
 }
 
 .p {
@@ -1932,7 +1803,7 @@ display: flex;
 .letter {
   display: inline-block;
   position: relative;
- /* float: left;*/
+  /* float: left; */
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
@@ -1963,7 +1834,85 @@ display: flex;
   color: tomato;
   font-size: 50px;
 }
-
-
-
 /*Logo 2 fin*/
+
+
+/*Comienza el estilo del slider para las tarjetas del home*/
+.slider-heading{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.slider-heading h3{
+  font-size: 1.75rem;
+  color: #1d1d1f;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 34px;
+}
+
+.slider-heading h3 span{
+  color: #6e6e73;
+}
+
+.product-box{
+  color: black;
+  width: 20rem;
+  height: 95%;
+  margin: 30px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-box:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.product-box img{
+  width: 100%;
+  height: 210px;
+}
+/*Aqui se hacen responsive las tarjetas-----------------------------------------*/
+@media(max-width:600px){
+  .slider-heading h3{
+      font-size: 21px;
+  }
+  .product-box{
+      width: 310px;
+      margin: 10px;
+      box-sizing: border-box;
+  }
+  .product-box img{
+      width: 100%;
+      height: 190px;
+      padding: 0px;
+  }
+  .product-box strong{
+      font-size: 21px;
+  }
+}
+
+@media(max-width:400px){
+  .product-box{
+      width: 280px;
+  }
+}
+@media(max-width:324px){
+  .product-box{
+      width: 225px;
+  }
+  .product-box img{
+      width: 100%;
+      height: 165px;
+  }
+}
+/*Termina estilo del slider para las tarjetas del home*/
