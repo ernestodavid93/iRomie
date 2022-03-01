@@ -4,6 +4,10 @@ body {
  
 }
 
+.view-itemImg{
+    width: 100%;
+}
+
 .expanded {
   max-width: 1320px;
 }
@@ -326,7 +330,7 @@ button:focus:not(:focus-visible) {
 
 .main-banner {
   background-color: #333;
-  background-image: url(/img/casa4.jpg);
+  background-image: url(/img/casa3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -875,7 +879,7 @@ footer .sub-footer a.scroll-to-top:hover {
 
 
 .view_img {
-  background-color: #333;
+  background-color: rgb(243, 241, 213);
   background-image: url(/img/Home2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;

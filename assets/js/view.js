@@ -8,6 +8,13 @@
 
 function addItem(item){
 
+
+    //ENVIO DE TITULO
+    const itemTitleHTML =
+    '      <h2>'+item.titulo+'</h2><br><br>';
+    const itemsContainerTitle = document.getElementById("item-title");
+    itemsContainerTitle.innerHTML = itemTitleHTML;
+
     //ENVIO DE IMAGEN
     const itemImgHTML =
     '<img class="d-block w-100" src="'+item.foto+'" alt="First slide"></img>';
@@ -17,9 +24,9 @@ function addItem(item){
     //ENVIO DE DATOS
 
     const itemHTML =
-    '<div class="" id="'+item.cartNu +'" style="width: 19rem;">\n'+
+    '<div class="" id="'+item.cartNu +'>\n'+
     '    <div class="card-body">\n'+
-    '      <h4>'+item.titulo+'</h4><br>\n'+
+    '        <br><br>\n'+
     '      <h4><i>Precio: </i> '+item.precio+'</h4><br>\n'+
     '<h5> <i>Especificaciones: </i></h5><br>\n'+
     '      <div class="row">\n'+
