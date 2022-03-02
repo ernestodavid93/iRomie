@@ -74,5 +74,8 @@ function view(index) {
     $("#productModal").modal("show");
     
 }// view
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 025dcbb46b2a48bf984e4fc41828d13c86ee3f75
