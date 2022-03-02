@@ -8,6 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
+    <!--ICONO de la pagina en la pestaña-->
+    <link rel="icon" href="img/house-chimney-user-solid.svg"> 
 
     <title>Nosotros</title>
 
@@ -21,7 +23,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-572-designer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
@@ -61,7 +63,7 @@
                     <a class="nav-link" href="explore.html">Registro</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contactanos</a>
+                  <a class="nav-link" href="contact.html">Contáctanos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</a>
@@ -125,10 +127,10 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="header-text">
                         <h2>Sobre<em> Nosotros</em></h2>
-                        <p>Nuestro proposito es brindarte tu espacio perfecto</p>
+                        <p style="color: rgb(215, 255, 239);">Nuestro proposito es brindarte tu espacio perfecto</p>
                         
                         <h2>Objetivo</h2>
-                        <p>El alto número de jóvenes que ingresan a universidades año con año, tanto foráneos y de la misma ciudad, 
+                        <p style="color: rgb(215, 255, 239);"> El alto número de jóvenes que ingresan a universidades año con año, tanto foráneos y de la misma ciudad, 
                             han contribuido a incrementar notablemente la demanda en la renta de habitaciones dado que muchos buscan
                             vivir lo mas a sus Universidades.</p>
                             
@@ -145,7 +147,7 @@
                     <div class="service-item">
                         <i class=" fas fa-bullseye iconos"></i>
                         <h4>Misión</h4>
-                        <p>En iRommies estamos comprometidos con nuestros clientes, en brindarles una manera rápida y
+                        <p>En iRommie estamos comprometidos con nuestros clientes, en brindarles una manera rápida y
                             segura de buscar un compañero de habitacion en renta y apreciamos que nuestros clientes nos elijan como la
                             plataforma líder en el sector.</p>
                     </div>
@@ -457,39 +459,6 @@ crossorigin="anonymous"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/logo.js"></script>
-  <script>
-    setTimeout(function(){
-        $('.loader').fadeToggle();
-    }, 1500);
-	
-  	$("a[href='#top']").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-		
-    $('.owl-what-they-say').owlCarousel({
-      items:2,
-      loop:true,
-      dots: false,
-      nav: false,
-      autoplay: true,
-      margin:30,
-        responsive:{
-          0:{
-            items:1
-          },
-          767:{
-            items:1
-          },
-          1200:{
-            items:2
-          },
-          1600:{
-            items:2
-          }
-        }
-    })
-  </script>
 
 </body>
 

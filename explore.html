@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <!--ICONO de la pagina en la pestaña-->
+  <link rel="icon" href="img/house-chimney-user-solid.svg"> 
 
-    <title>Regisro</title>
+    <title>Registro de propiedad</title>
 
         <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -20,7 +22,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-572-designer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
@@ -130,97 +132,147 @@
             </div>
 
             <main>
-
+                <!--Inicia el form de registro-->
                 <div class="container text-justify">
                     <form id="new">
                         <br><br>
-                        
-                        <div >
-                            <label for="name" class="label">Nombre</label>
+                        <!--Ingresar nombre -->
+                        <div id="grupo__nombre">
+                            <label for="nombre" class="label">Titulo</label>
                             <br>
-                            <input class="input" type="text" placeholder="Nombre de propiedad" id="name">
+                            <input class="input" type="text" placeholder="ej. : Renta de depa/casa" id="nombre" name="nombre">
+                            <!--icono oculto-->
+                            <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
                         </div>
 
-                        <div class="form-group">
-                        <label class="label">Tipo de propiedad</label>
-                        <br>
-                        <select class="input" id="categoria" placeholder="Seleccione">
-                            <option>-Seleccione-</option>
-                            <option>Casa</option>
-                            <option>Departamento</option>
-                            <option>Habitacion (Rommie)</option>
-                        </select>
+                        <!--Ingresar precio -->
+                        <div id="grupo__precio">
+                          <label for="precio" class="label">Precio</label>
+                          <br>
+                          <input class="input" type="text" id="precio" name="precio" placeholder="$ Mensualidad"
+                          ><i class="formulario__validacion-inactivo fas fa-times-circle"></i>
                         </div>
-            
-                        <div >
-                            <label for="" class="label">Telefono</label>
+
+                        <!-- Ingresar foto -->
+                        <div id="grupo__foto" class="form-group">
+                          <label for="foto">Subir foto</label>
+                          <input type="file" class="form-control-file" id="foto" name="foto">
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                        </div>
+
+                        <!--Ingresar direccion-->
+                        <div id="grupo__direccion">
+                            <label for="direccion" class="label">Dirección</label>
                             <br>
-                            <input class="input" type="text" id="telefono" placeholder="número de 10 dígitos">
+                            <input class="input" type="text" id="direccion" name="direccion" placeholder="ej. : progreso 12">
+                            <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
                         </div>
                         
-                       
-                        <div class="">
-                        <label for="" class="label">Costo</label>
-                        <br>
-                        <input class="input" type="text" id="costo" placeholder="$ mensualidad">
-                        </div>
-                    
-                     
-                        <div class="form-group">
-                            <label for="" class="label">Ubicación</label>
+                        <!--Ingresa municipio-->
+                        <div id="grupo__municipio" class="form-group">
+                          <label for="municipio" class="label">Municipio</label>
+                          <br>
+                          <select class="input" id="municipio" name="municipio" placeholder="Seleccione">
+                              <option value="">seleccione</option>
+                              <option value="Masculino">Guadalajara</option>
+                              <option value="Zapopan">Zapopan</option>
+                              <option value="Tlaquepaque">Tlaquepaque</option>
+                              <option value="Tlajomulco">Tlajomulco</option>
+                              
+                          </select>
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                        </div> 
+                        
+                        <!--Ingresa baños-->
+                        <div id="grupo__banios" class="form-group">
+                          <label for="banios" class="label">Numero de baños</label>
+                          <br>
+                          <select class="input" id="banios" name="banios" placeholder="Seleccione">
+                            <option value="">seleccione</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                      </div>
+
+                        <!--Ingresa habitaciones-->
+                        <div id="grupo__habitaciones" class="form-group">
+                            <label for="habitaciones" class="label">Numero de habitaciones</label>
                             <br>
-                            <input class="input" type="text" id="ubicacion" placeholder="Dirección">
-                        </div>
-                    
-                        <div class="form-group">
-                            <label class="label">Numero de habitaciones</label>
-                            <br>
-                            <select class="input" id="habitaciones" placeholder="Seleccione">
-                                <option>-Seleccione-</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4+</option>
+                            <select class="input" id="habitaciones" name="habitaciones" placeholder="Seleccione">
+                                <option value="">seleccione</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
                             </select>
-                            </div>
+                            <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                        </div>
                       
-                        <div class="form-group">
-                        <label for="" class="label">Reglas de casa</label>
-                        <br>
-                        <input class="input" type="text" id="reglas" placeholder="Reglas de la casa">
+                        <!--Ingresa genero-->
+                        <div id="grupo__genero" class="form-group">
+                          <label for="genero" class="label">Genero dirigido</label>
+                          <br>
+                          <select class="input" id="genero" name="genero" placeholder="Seleccione">
+
+                              <option value="">seleccione</option>
+                              <option value="Masculino">Masculino</option>
+                              <option value="LGBTUA">LGBTUA</option>
+                              <option value="Femenino">Femenino</option>
+                              <option value="Indiferente">Indiferente</option>
+                              
+                          </select>
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                        </div> 
+
+                        <!--Ingresa si cuenta con cochera-->
+                        <div id="grupo__cochera" class="form-group">
+                          <label for="cochera" class="label">Cuenta con cochera?</label>
+                          <br>
+                          <select class="input" id="cochera" name="cochera" placeholder="Seleccione">
+                              <option value="">seleccione</option>
+                              <option value="Si">Si</option>
+                              <option value="No">No</option>
+
+                          </select>
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                        </div> 
+
+                         <!--Ingresar descripcion -->
+                         <div id="grupo__descripcion">
+                          <label for="descripcion">Descripcion</label>
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                          <br>
+                          <input class="form-control" type="text" id="descripcion" name="descripcion" placeholder="informacion breve de la propiedad ej. : lugares cercanos, ventajas, consideraciones etc. ">
                         </div>
 
-                        <div class="form-group">
-                            <label for="" class="label">Servicios</label>
-                            <br>
-                            <input class="input" type="text" id="servicios" placeholder="Servicios">
-                            </div>
-                        
-                        <div class="form-group">
-                        <label for="" class="label">Descripcion</label>
-                        <br>
-                        <textarea class="input" id="descripcion" rows="3"></textarea>
-                        </div>
-                    
-                    
-                        <div class="custom-file">
-                            <label for="" class="label">Subir imagenes</label>
-                            <br>
-                            <input type="file" class="input" id="fotos" lang="es">
-                            <label class="label" for="customFileLang">Seleccionar Archivo</label>
-                        </div>
-                        
                         <br><br><br>
                         <div class="col">
 
-                            <input type="submit" class="button" value="Enviar"></input>
+                          <div class="alert alert-warning formulario__mensaje" role="alert" id="formulario__mensaje">
+                            Campos Incompletos!
+                          </div>
+            
+                          <div class="alert alert-success formulario__mensaje-exito" role="alert" id="formulario__mensaje-exito">
+                            Enviado con exito!
+                          </div>
+
+                            <button type="submit" id="btnSend" class="button" value="Enviar">Enviar</button>
                         </div>
+                        <br><br><br>
                     
-                        <br>
+                        
                     </form>
                 </div>
 
-                <div id="tabla-info">
+                <!-- <div id="tabla-info">
                     <table class="table">
                         <thead>
 
@@ -230,7 +282,7 @@
                         </tbody>
                     </table>
                 </div>
-                <button id="mostrar">Mostrar tabla</button>
+                <button id="mostrar">Mostrar tabla</button> -->
             </main>
 
         </div>
@@ -298,7 +350,6 @@
           </div>
       </div>
   </footer>  
-    
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -322,6 +373,7 @@ crossorigin="anonymous"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/property.js"></script>
   <script src="assets/js/logo.js"></script>
+  <script src="assets/js/validacion_registroPropiedad.js"></script>
   <script>
     setTimeout(function(){
         $('.loader').fadeToggle();
