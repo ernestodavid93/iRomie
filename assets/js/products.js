@@ -66,16 +66,13 @@ window.addEventListener("load", function (){
 
 
 function view(index) {
-    // console.log(index);
+     //console.log(index);
     // console.table(productos[index]);
+    
     document.getElementById("productTitleModal").innerHTML=productos[index].nombre;
-    document.getElementById("productBodyModal").innerHTML=`${productos[index].descripcion}  <img class="bd-placeholder-img card-img-top" role="img" src="img/${productos[index].foto}" />
+    document.getElementById("productBodyModal").innerHTML=`${productos[index].descripcion}
+    <img class="bd-placeholder-img card-img-top" role="img" src="img/${productos[index].foto}" />
     <strong>$ ${productos[index].precio} MXN<strong>`;
-    $("#productModal").modal("show");
+    $("#productModal").modal('show');
     
 }// view
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 025dcbb46b2a48bf984e4fc41828d13c86ee3f75
