@@ -74,5 +74,3 @@ function view(index) {
     $("#productModal").modal("show");
     
 }// view
-
-
