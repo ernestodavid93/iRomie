@@ -8,12 +8,15 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <!--ICONO de la pagina en la pestaña-->
+  <link rel="icon" href="img/house-chimney-user-solid.svg"> 
 
   <title>iRoomie</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
   <!--Font awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -22,7 +25,7 @@
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/h.css">
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-572-designer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -198,8 +201,7 @@
               <div class="col-lg-4">
                 <fieldset>
                   <label for="chooseprice" class="form-label">Rango de precio</label>
-                  <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory"
-                    onChange="this.form.click()">
+                  <select name="Price" class="form-select" aria-label="Default select example">
                     <option selected>Elige el precio</option>
                     <option value="$100 - $250">$100 - $250</option>
                     <option value="$250 - $500">$250 - $500</option>
@@ -211,8 +213,7 @@
               <div class="col-lg-4">
                 <fieldset>
                   <label for="chooseplan" class="form-label">Elige la ubicación</label>
-                  <select name="Plan" class="form-select" aria-label="Default select example" id="chooseCategory"
-                    onChange="this.form.click()">
+                  <select name="Plan" class="form-select" aria-label="Default select example">
                     <option selected>Ubicación</option>
                     <option value="Standard">Guadalajara</option>
                     <option value="Professional">Zapopan</option>
@@ -234,7 +235,6 @@
   </div>
 
 
-
   <!--Explora una mejor experiencia con filtros detallados-->
   <section class="explore-work" id="explore">
     <div class="container expanded">
@@ -254,7 +254,7 @@
             <div class="collapse" id="collapseExample">
               <div class="row">
                 <!--Inicio de los checkbox-->
-                <div class="card card-body col-lg-2" style="margin-left: 2.2rem;">
+                <div class="card card-body col-md-3" style="margin-left: 2.2rem;">
                   <h5><i class="fas fa-home"></i> Tipo de cuarto</h5>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -270,7 +270,7 @@
                   </div><br>
                 </div>
 
-                <div class="card card-body col-lg-2">
+                <div class="card card-body col-md-4">
                   <h5><i class="fas fa-bed"></i> Dormitorios</h5>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -290,7 +290,7 @@
                   </div>
                 </div>
 
-                <div class="card card-body col-lg-2">
+                <div class="card card-body col-md-3">
                   <h5><i class="fas fa-users"></i> Género preferido</h5>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -310,7 +310,7 @@
                   </div>
                 </div>
 
-                <div class="card card-body col-lg-2">
+                <div class="card card-body col-md-5">
                   <h5><i class="far fa-times-circle"></i> Reglas de la casa</h5>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -334,7 +334,7 @@
                   </div>
                 </div>
 
-                <div class="card card-body col-md-2">
+                <div class="card card-body col-md-5">
                   <h5><i class="fas fa-couch"></i>Servicios</h5>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -370,8 +370,6 @@
                   </div>
                 </div>
 
-
-
               </div>
               <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample" role="button"
                 aria-expanded="false" aria-controls="collapseExample">Cancelar</a>
@@ -379,14 +377,13 @@
               <a href="#" class="btn btn-lg active" style="background-color: tomato;" role="button"
                 aria-pressed="true">Aplicar filtros</a>
 
-            
             </div>
           </div>
         </section>
       </div>
 
     </div>
-  </section>
+  </section>  <!--Explora una mejor experiencia con filtros detallados FIN-->
 
 
 
@@ -431,16 +428,46 @@
   
 
 <!--Comienza slider de las tarjetas-->
-<section>
-  
-  <!--Cabezera de las tarjetas-->
-  <div class="slider-heading">
-    <h3>Ultimas actualizaciones</h3>
+<section class="whats-trending">
+  <div class="container expanded">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h2>Encuentra aquí<br><em>nuestras opciones disponibles</em></h2>
+          </div>
+          <div class="left-content">
+            <p>Tenemos muchas opciones para tí, encuentra tu espacio ideal.</p>
+            <div class="primary-button">
+              <a href="#">Descubre más</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-4">
+              <div class="right-image">
+                  <div class="thumb">
+                      <div class="">
+                      </div>
+                      <img src="assets/images/whats-trending-item-image.jpg" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
+</section>
 
-  <!--Se manda llamar el Jason de las tarjetas mediante el ID-->
-  <ul id="listItems" class="autoWidth cS-hidden"></ul>
 
+
+<!--Comienza slider de las tarjetas-->
+<section>
+
+<!--Cabezera de las tarjetas-->
+<div class="slider-heading">
+  <h3>Ultimas actualizaciones</h3>
+</div>
+
+<!--Se manda llamar el Jason de las tarjetas mediante el ID-->
+<!-- <ul id="listItems" class="autoWidth cS-hidden" style="width: auto;"></ul> <--UL ANTERIOR--> 
+<ul id="listItems"></ul>
 </section>
 <!--Termina slider de las tarjetas-->
 
@@ -465,23 +492,23 @@
 </div>
 
 </section>
-<!--Termina slider de las tarjetas-->
+<!--Termina view de las tarjetas-->
 
 
-  <section class="call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <h2>En iRoomie nos preocupamos por ti</h2>
-        </div>
-        <div class="col-lg-4">
-          <div class="white-button">
-            <a href="contact.html">Contáctanos</a>
-          </div>
+<section class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>En iRoomie nos preocupamos por ti</h2>
+      </div>
+      <div class="col-lg-4">
+        <div class="white-button">
+          <a href="contact.html">Contáctanos</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
   <!--Comienza footer-->
@@ -551,54 +578,47 @@
 
 <!-- Scripts -->
 
-<<<<<<< HEAD
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-=======
 <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
->>>>>>> Fetch
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/logo.js"></script>
-<<<<<<< HEAD
  
 <!--======JS Slider=========================================-->
 <script src="./assets/js/items.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
 
 <script>
-        $(document).ready(function() {
-     
-        $('.autoWidth').removeClass('cS-hidden');
-        let slider = $('.autoWidth').lightSlider({
+       $(document).ready(function() {
+    
+       $('.autoWidth').removeClass('cS-hidden');
+       let slider = $('.autoWidth').lightSlider({
 
-        
-        loop:true,
-        autoWidth:true,
-        enableTouch:true,
-        
+       
+       loop:true,
+       autoWidth:true,
+       enableTouch:true,
+       
 
-        onSliderLoad: function() {
-            $('.autoWidth').removeClass('cS-hidden');
-        } 
+       onSliderLoad: function() {
+           $('.autoWidth').removeClass('cS-hidden');
+       } 
 
-    });
-    slider.refresh();  
-  });
+   });
+   slider.refresh();  
+ });
 </script>
-<!--======JS Slider=========================================-->
-=======
->>>>>>> Fetch
 
   <!--======JS Slider=========================================-->
 <!-- <script src="./assets/js/items.js"></script> -->
@@ -614,7 +634,6 @@
      
         $('.autoWidth').removeClass('cS-hidden');
         let slider = $('.autoWidth').lightSlider({
-
         
         loop:true,
         autoWidth:true,
