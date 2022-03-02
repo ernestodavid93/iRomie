@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!--ICONO de la pagina en la pestaña-->
-    <link rel="icon" href="img/house-chimney-user-solid.svg"> 
+      <!--ICONO de la pagina en la pestaña-->
+  <link rel="icon" href="img/house-chimney-user-solid.svg"> 
 
     <title>Regisro</title>
 
@@ -22,7 +22,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-572-designer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
@@ -131,97 +131,104 @@
             </div>
 
             <main>
-
+                <!--Inicia el form de registro-->
                 <div class="container text-justify">
                     <form id="new">
                         <br><br>
-                        
+                        <!--Ingresar nombre -->
                         <div >
-                            <label for="name" class="label">Nombre</label>
+                            <label for="nombre" class="label">Nombre</label>
                             <br>
-                            <input class="input" type="text" placeholder="Nombre de propiedad" id="name">
+                            <input class="input" type="text" placeholder="Nombre de propiedad" id="nombre" name="nombre">
                         </div>
 
-                        <div class="form-group">
-                        <label class="label">Tipo de propiedad</label>
-                        <br>
-                        <select class="input" id="categoria" placeholder="Seleccione">
-                            <option>-Seleccione-</option>
-                            <option>Casa</option>
-                            <option>Departamento</option>
-                            <option>Habitacion (Rommie)</option>
-                        </select>
+                        <!--Ingresar precio -->
+                        <div>
+                          <label for="precio" class="label">Precio</label>
+                          <br>
+                          <input class="input" type="text" id="precio" placeholder="$ Mensualidad">
                         </div>
-            
+
+                        <!-- Ingresar foto -->
+                        <div class="form-group">
+                          <label for="foto">Subir foto</label>
+                          <input type="file" class="form-control-file" id="foto" name="foto">
+                        </div>
+
+                        <!--Ingresar direccion-->
                         <div >
-                            <label for="" class="label">Telefono</label>
+                            <label for="direccion" class="label">Direccion</label>
                             <br>
-                            <input class="input" type="text" id="telefono" placeholder="número de 10 dígitos">
+                            <input class="input" type="text" id="direccion" name="direccion" placeholder="Direccion">
                         </div>
                         
-                       
-                        <div class="">
-                        <label for="" class="label">Costo</label>
-                        <br>
-                        <input class="input" type="text" id="costo" placeholder="$ mensualidad">
-                        </div>
-                    
-                     
+                        <!--Ingresa municipio-->
                         <div class="form-group">
-                            <label for="" class="label">Ubicación</label>
-                            <br>
-                            <input class="input" type="text" id="ubicacion" placeholder="Dirección">
-                        </div>
-                    
+                          <label for="municipio" class="label">Municipio</label>
+                          <br>
+                          <select class="input" id="municipio" name="municipio" placeholder="Seleccione">
+                             
+                              <option value="Masculino">Guadalajara</option>
+                              <option value="Zapopan">Zapopan</option>
+                              <option value="Tlaquepaque">Tlaquepaque</option>
+                              <option value="Tlajomulco">Tlajomulco</option>
+                              
+                          </select>
+                        </div> 
+                        
+                        <!--Ingresa baños-->
                         <div class="form-group">
-                            <label class="label">Numero de habitaciones</label>
+                          <label for="banios" class="label">Numero de baños</label>
+                          <br>
+                          <select class="input" id="banios" name="banios" placeholder="Seleccione">
+                            
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                      </div>
+
+                        <!--Ingresa habitaciones-->
+                        <div class="form-group">
+                            <label for="habitaciones" class="label">Numero de habitaciones</label>
                             <br>
-                            <select class="input" id="habitaciones" placeholder="Seleccione">
-                                <option>-Seleccione-</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4+</option>
+                            <select class="input" id="habitaciones" name="habitaciones" placeholder="Seleccione">
+                               
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
-                            </div>
+                        </div>
                       
+                        <!--Ingresa genero-->
                         <div class="form-group">
-                        <label for="" class="label">Reglas de casa</label>
-                        <br>
-                        <input class="input" type="text" id="reglas" placeholder="Reglas de la casa">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="" class="label">Servicios</label>
-                            <br>
-                            <input class="input" type="text" id="servicios" placeholder="Servicios">
-                            </div>
+                          <label for="genero" class="label">Genero dirigido</label>
+                          <br>
+                          <select class="input" id="genero" name="genero" placeholder="Seleccione">
+                             
+                              <option value="Masculino">Masculino</option>
+                              <option value="Femenino">Femenino</option>
+                              <option value="Indiferente">Indiferente</option>
+                              
+                          </select>
+                        </div> 
                         
-                        <div class="form-group">
-                        <label for="" class="label">Descripcion</label>
-                        <br>
-                        <textarea class="input" id="descripcion" rows="3"></textarea>
-                        </div>
-                    
-                    
-                        <div class="custom-file">
-                            <label for="" class="label">Subir imagenes</label>
-                            <br>
-                            <input type="file" class="input" id="fotos" lang="es">
-                            <label class="label" for="customFileLang">Seleccionar Archivo</label>
-                        </div>
                         
                         <br><br><br>
                         <div class="col">
 
-                            <input type="submit" class="button" value="Enviar"></input>
+                            <button type="button" id="btnSend" class="button" value="Enviar">Enviar</button>
                         </div>
                     
                         <br>
                     </form>
                 </div>
 
-                <div id="tabla-info">
+                <!-- <div id="tabla-info">
                     <table class="table">
                         <thead>
 
@@ -231,7 +238,7 @@
                         </tbody>
                     </table>
                 </div>
-                <button id="mostrar">Mostrar tabla</button>
+                <button id="mostrar">Mostrar tabla</button> -->
             </main>
 
         </div>
@@ -299,7 +306,60 @@
           </div>
       </div>
   </footer>  
+  
+  <script>
+    document.getElementById("btnSend").addEventListener("click", function(e){
+
+      let nombre = document.getElementById("nombre");
+      let precio = document.getElementById("precio");
+      let foto = document.getElementById("foto");
+      let direccion = document.getElementById("direccion");
+      let municipio = document.getElementById("municipio");
+      let banios = document.getElementById("banios");
+      let habitaciones = document.getElementById("habitaciones");
+      let genero = document.getElementById("genero");
+
+      console.log(nombre.value);
+      console.log(precio.value);
+      console.log(foto.value);
+      console.log(direccion.value);
+      console.log(municipio.value);
+      console.log(banios.value);
+      console.log(habitaciones.value);
+      console.log(genero.value);
+
+      ///// El siguiente código agrega un nuevo producto mediante un POST
+const data = {
     
+    nombre: nombre.value,
+    precio: precio.value,
+    foto: foto.value,
+    direccion: direccion.value,
+    municipio: municipio.value,
+    banios: banios.value,
+    habitaciones: habitaciones.value,
+    genero: genero.value
+    
+    };
+
+fetch("http://localhost:8081/api/propiedades/", {
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+})
+.then(response => response.text())
+.then(data => {
+  console.log('Success:', data);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+
+
+    })
+  </script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
