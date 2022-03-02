@@ -1,7 +1,7 @@
 //VALIDACION DEL FORMULARIO
 
 const formulario = document.getElementById('new');
-const inputs = document.querySelectorAll('#new select, input');
+const inputs = document.querySelectorAll('#new select, input, textarea');
 
 // const expresiones = {
 // 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -77,30 +77,7 @@ const validarCampo = (input, campo) => {
 	}
 }
 
-// //VALIDAR EL REPETIR CONTRASEÑA
-// const validarPassword2 = () => {
-// 	const inputPassword1 = document.getElementById('password'); //JALAMOS AMBOS PASSWORD
-// 	const inputPassword2 = document.getElementById('password2');
 
-// 	if(inputPassword1.value !== inputPassword2.value){ //COMPARAMOS si son distintos
-        
-//         document.querySelector(`#grupo__password2 i`).classList.remove('formulario__validacion-inactivo');
-// 		document.querySelector(`#grupo__password2 i`).classList.add('fa-times-circle'); //añade la tacha
-// 		document.querySelector(`#grupo__password2 i`).classList.remove('fa-check-circle');//borra la palomita
-// 	/*	document.querySelector(`#grupo__password2 .formulario__input-error`).classList.add('formulario__input-error-activo');
-// 		*/campos['password'] = false; 
-// 	} else {
-//         document.querySelector(`#grupo__password2 i`).classList.remove('formulario__validacion-inactivo');
-// 		document.querySelector(`#grupo__password2 i`).classList.remove('fa-times-circle');
-// 		document.querySelector(`#grupo__password2 i`).classList.add('fa-check-circle');
-// /*		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove('formulario__input-error-activo');
-// 		*/campos['password'] = true;
-// 	}
-
-// 	if (inputPassword2.value == "") {
-// 		document.querySelector(`#grupo__password2 i`).classList.add('fa-times-circle'); //añade la tacha
-// 	}
-// }
 
 inputs.forEach((input) => { //PARA HACER LA VALIDACION EN CADA INPUT AL PRESIONAR DENTRO Y FUERA 
 	input.addEventListener('keyup', validarFormulario);
