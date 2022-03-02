@@ -1,58 +1,78 @@
 let productos;
-// Aquí se debe cambiar el URL del servicio en el BackEnd
-const URL_MAIN ='http://localhost:8081/api/propiedades/';
-function addItems(div_Productos) {
+const URL_MAIN = 'http://localhost:8081/api/propiedades/';
+
+function addItem(listItems){
+
     fetch(URL_MAIN, {
         method: 'get'
     }).then(function(response) {
         response.json().then(function (json) {
-            console.log(json);
-            console.log(json.length);
+
             productos=json;
-            Array.from(json).forEach((p, index) => {
-                div_Productos.innerHTML += `
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" role="img" src="/img/${p.foto}" />
-                            <p class="card-text"><strong>${p.nombre}</strong></p>
-                            
-                            <p class="card-text">Baños: ${p.banios}</p>
-                            <p class="card-text">Habitaciones: ${p.habitaciones}</p>
-                            <p class="card-text">Genero: ${p.genero}</p>
-                            <div class="card-body">
-                            <p class="card-text">Direccion: ${p.direccion}</p>
-                            <p class="card-text">Municipio: ${p.municipio}</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="btnVer_${p.id}" onclick="view(${index});">Ver</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                                    </div>
-                                    <small class="text-muted">$ ${p.precio} MXN</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }); // foreach
+
+
+    Array.from(json).forEach((p, index) => {
+
+    const cardSli = document.createElement("li");
+    cardSli.setAttribute("class", "item");
+    cardSli.innerHTML =
+    `
+    <!--product-box-->
+    <div class="product-box">
+      <!--Imagen-->
+      <img src="/img/${p.foto}" class="cardImg img-fluid" alt="...">
+
+      <!--Cuerpo de la tarjeta-->
+      <div class="card-body">
+        <h5 class="card-title">Precio $${p.precio} MXN</h5>
+        <div class="row">
+            <div class="col-sm">
+              <i class="fas fa-bed">${p.habitaciones}</i>
+            </div>
+            <div class="col-sm">
+              <i class="fas fa-bath">${p.banios}</i>
+            </div>
+            <div class="col-sm">
+              <i class="fas fa-car">${p.cochera}</i>
+            </div>
+        </div>
+        <br>
+        <p class="fas fa-map-marker-alt">${p.direccion}</p> 
+        <p class="card-text fas fa-house">${p.descripcion}</p>
+        <p class="cardL"><small >Last updated 3 mins ago</small></p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary " id="btnVer_${p.id}" onclick="view(${index});">Ver</button>
+            
+        </div>
+      </div>
+    </div>`;
+    const $listItem = document.getElementById("listItems");
+    $listItem.appendChild(cardSli);
+
+    }); // foreach
         });//then
-    }).catch(function(err) {
+    }).catch(function (err) {
         console.log(err);
     });
-    console.log(document.getElementById("div_Productos"));
-   
-}// addItems
+    //console.log(document.getElementById("item"));
+
+}// addItem
 
 window.addEventListener("load", function (){
-    let div = document.getElementById("div_Productos");
-    addItems(div);
+    let div = document.getElementById("item");
+    addItem(div);
    
 });
+
 
 function view(index) {
     // console.log(index);
     // console.table(productos[index]);
     document.getElementById("productTitleModal").innerHTML=productos[index].nombre;
-    document.getElementById("productBodyModal").innerHTML=`${productos[index].descripcion}  <img class="bd-placeholder-img card-img-top" role="img" src="img/${productos[index].url_Imagen}" />
-    <strong>$ ${productos[index].price} MXN<strong>`;
+    document.getElementById("productBodyModal").innerHTML=`${productos[index].descripcion}  <img class="bd-placeholder-img card-img-top" role="img" src="img/${productos[index].foto}" />
+    <strong>$ ${productos[index].precio} MXN<strong>`;
     $("#productModal").modal("show");
+    
 }// view
+
+

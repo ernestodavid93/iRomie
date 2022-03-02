@@ -24,13 +24,60 @@
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-572-designer.css">
   <link rel="stylesheet" href="assets/css/owl.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
 
+
+<!--======CSS Slider=======================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Botones para el slider, no mover de aqui, si se mueven a la hoja de estilos entran en conflicto-->
+  <style>
+    .lSPager{
+        display: none;
+    }
+
+    .lSAction > a{
+        background-color: #00000033;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lSAction > a::after{
+        position: absolute;
+        content: '';
+        margin: auto;
+        border: solid #ffffff;
+        border-width: 0px 4px 4px 0px;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .lSAction > .lSPrev::after{
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    .lSAction > .lSNext::after{
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    /*Responsividad de los botones-----------------------------------------*/
+    @media(max-width:600px){
+        .lSAction > a{
+            display: none;
+        }
+    }
+</style>
+<!--Aqui terminan los botones del Slider-->
+<!--======Termina CSS Slider===============================-->
 </head>
 
 <body>
-
 
   <header id="#top">
 
@@ -151,8 +198,8 @@
               <div class="col-lg-4">
                 <fieldset>
                   <label for="chooseprice" class="form-label">Rango de precio</label>
-                  <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory"
-                    onChange="this.form.click()">
+                  <select name="" class="form-select" aria-label="Default select example" id="chooseCategory"
+                    >
                     <option selected>Elige el precio</option>
                     <option value="$100 - $250">$100 - $250</option>
                     <option value="$250 - $500">$250 - $500</option>
@@ -164,8 +211,8 @@
               <div class="col-lg-4">
                 <fieldset>
                   <label for="chooseplan" class="form-label">Elige la ubicacion</label>
-                  <select name="Plan" class="form-select" aria-label="Default select example" id="chooseCategory"
-                    onChange="this.form.click()">
+                  <select name="" class="form-select" aria-label="Default select example" id="chooseCategory"
+                    ">
                     <option selected>Ubicacion</option>
                     <option value="Standard">Guadalajara</option>
                     <option value="Professional">Zapopan</option>
@@ -338,93 +385,55 @@
         </section>
       </div>
 
-
-
-
-
-
     </div>
   </section>
 
 
-  <section class="whats-trending">
-    <div class="container expanded">
-      <div class="row">
-        <div class="col-lg-6 align-self-center">
-          <div class="section-heading">
-            <h2>Check Out Whats Trending In<br><em>Our Interior Work</em>.</h2>
-          </div>
-          <div class="left-content">
-            <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit, sed do eismuod
-              larehai med at vero eos et suscipit neque rerum molestias accusamus et iusto odio dignissimos ducimus qui
-              blanditis.</p>
-            <div class="primary-button">
-              <a href="#">Discover More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="right-image">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <h4><a href="#">Modernized Interior</a></h4>
-                  <span>Guest Room Decoration</span>
-                </div>
-              </div>
-              <img src="assets/images/whats-trending-item-image.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!--Comienza slider de las tarjetas-->
+<section>
   
-<!--Slider-->
-<br>
-<br>
-<br>
-<br>
-<!-- 
-<div class="padre">
+  <!--Cabezera de las tarjetas-->
+  <div class="slider-heading">
+    <h3>Ultimas actualizaciones</h3>
+  </div>
 
-    <div id="slLeft" onclick="moveLeft()">
-      <button>
-        &lt;
-      </button>
-    </div>
+  <!--Se manda llamar el Jason de las tarjetas mediante el ID-->
+  <ul id="listItems" class="autoWidth cS-hidden"></ul>
 
+</section>
+<!--Termina slider de las tarjetas-->
 
-    <div class="card-deck">
-       JSON de los productos 
-      <div id="list-items"></div>
-
-    </div>
-
-
-    <div id="slRight" onclick="moveRight()">
-      <button>
-        &gt;
-      </button>
-    </div>
-
-  </div> -->
-
-  <br>
-  <br>
-
-  <!--Termina slider-->
-
-
-  <div class="album py-5 bg-light">
+  <!-- <div class="album py-5 bg-light">
     <div class="container">
 
       <div class="row" id="div_Productos">
        
         
-      </div> <!-- row -->
-     </div> <!--container -->
-  </div><!-- Productos -->
+      </div> 
+     </div> 
+  </div>-->
+
+  
+  <div class="modal" tabindex="-1" id="productModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productTitleModal">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="productBodyModal">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
   <section class="call-to-action">
@@ -443,6 +452,7 @@
   </section>
 
 
+  <!--Comienza footer-->
 <footer class="no-margin-footer" style="text-align:center;">
   <div class="container">
       <div class="row">
@@ -505,30 +515,50 @@
       </div>
   </div>
 </footer> 
+<!--Termina footer-->
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-    crossorigin="anonymous"></script>
+<!-- Scripts -->
 
-  <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="/assets/js/products.js"></script>
-  <script src="./items.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-  <script src="assets/js/items.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/wow.js"></script>
+  <!-- <script src="assets/js/wow.js"></script> -->
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/logo.js"></script>
  
+<!--======JS Slider=========================================-->
+<script src="/assets/js/products.js"></script>
+<script src="./assets/js/items.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<script>
+        $(document).ready(function() {
+     
+        $('.autoWidth').removeClass('cS-hidden');
+        let slider = $('.autoWidth').lightSlider({
+
+        
+        loop:true,
+        autoWidth:true,
+        enableTouch:true,
+        
+
+        onSliderLoad: function() {
+            $('.autoWidth').removeClass('cS-hidden');
+        } 
+
+    });
+    slider.refresh();  
+  });
+</script>
+<!--======JS Slider=========================================-->
 
 </body>
 
