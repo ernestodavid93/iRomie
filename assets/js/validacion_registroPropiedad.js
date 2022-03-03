@@ -194,7 +194,8 @@ const data = {
         fetch("http://localhost:8081/api/propiedades/", {
         method: 'POST', // or 'PUT'
         headers: {
-        'Content-Type': 'application/json',
+			'Content-Type': 'application/json',
+			
         },
         body: JSON.stringify(data),
         })
