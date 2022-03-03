@@ -138,34 +138,42 @@
                 <div class="container text-justify">
                     <form id="formulario">
                         <br><br>
-                        
-                        <div id="grupo__nombre">
-                            <label for="" class="label">Nombre</label> <br>
-                            <input class="input" type="text" name="nombre" id="txtName" placeholder="nombre completo">
-                            <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
-                        </div>
-            
-                        <div id="grupo__telefono">
-                            <label for="" class="label">Teléfono</label> <br>
-                            <input class="input" type="text" name="telefono" id="txtPhone" placeholder="número de 10 dígitos">
-                            <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
-                        </div>
+                      
                         
                         <div id="grupo__correo">
-                            <label for="inputEmail3" class="label col-form-label">Email</label> <br>
-                            <input type="email" class="input" id="inputEmail3" name="correo" placeholder="correo@correo.com">
+                            <label for="username" class="label col-form-label">Email</label> <br>
+                            <input type="email" class="input" id="username" name="username" placeholder="correo@correo.com">
                             <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
                         </div>
             
                         <div id="grupo__password">
-                            <label for="inputPassword3" class="label">Contraseña</label> <br>
+                            <label for="password" class="label">Contraseña</label> <br>
                             <input class="input" type="password" name="password" id="password" placeholder="contraseña">
                             <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
                         </div>
+
+                        <div id="grupo__nombre">
+                          <label for="nombre" class="label">Nombre</label> <br>
+                          <input class="input" type="text" name="nombre" id="nombre" placeholder="nombre completo">
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                         </div>
+
+                         <div id="grupo_nombre">
+                          <label for="apellido" class="label">Apellido</label> <br>
+                          <input class="input" type="text" name="apellido" id="apellido" placeholder="nombre completo">
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                         </div>
+
+                        <div id="grupo__telefono">
+                          <label for="telefono" class="label">Telefono</label> <br>
+                          <input class="input" type="text" name="telefono" id="telefono" placeholder="número de 10 dígitos">
+                          <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                      </div>
             
-                        <div id="grupo__password2">
-                            <label for="inputPassword3" class="label">Repetir contraseña</label> <br>
-                            <input class="input" type="password" name="password2" id="password2"  placeholder="repita su contraseña"><i class="formulario__validacion-inactivo fas fa-times-circle"></i>
+                        <div id="grupo__descripcion">
+                            <label for="descripcion" class="label">Descripcion</label> <br>
+                            <textarea id="descripcion" name="descripcion" rows="4" cols="30"></textarea>
+                            <i class="formulario__validacion-inactivo fas fa-times-circle"></i>
                         </div>
               
                         <div class="alert alert-warning formulario__mensaje" role="alert" id="formulario__mensaje">
@@ -264,10 +272,10 @@ integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amn
 crossorigin="anonymous"></script>
 
   <!-- Scripts -->
-  <!-- Bootstrap core JavaScript 
+  Bootstrap core JavaScript 
     <script src="./items.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-   -->
+  
   <script src="assets/js/items.js"></script>
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
@@ -276,6 +284,8 @@ crossorigin="anonymous"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/logo.js"></script>
+  <script src="assets/js/registerUser.js"></script>
+
   <script>
     setTimeout(function(){
         $('.loader').fadeToggle();
