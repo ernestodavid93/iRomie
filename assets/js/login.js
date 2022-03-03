@@ -17,6 +17,8 @@ const data = {
   
   };
 
+  
+
 fetch("http://localhost:8081/api/login/", {
 method: 'POST', // or 'PUT'
 headers: {
@@ -24,12 +26,30 @@ headers: {
 },
 body: JSON.stringify(data),
 })
-.then(response => response.text())
-.then(data => {
-console.log('Success:', data);
+// .then(response => response.json())
+//   .then(data => {
+//     console.log('Success', data);
+//    window.location.href = 'explore.html'
+// })
+// .catch((error) => {
+  
+// });
+  
+   .then(function(response) {
+     console.log('response =', response);
+     if (response.ok == true) {
+       window.location.href = 'explore.html'       
+     }
+        return response.json();
+    })
+    .then(function(data) {
+        console.log('data = ', data);
+    })
+    .catch(function(err) {
+        console.error(err);
+    });
+  
+  
 })
-.catch((error) => {
-console.error('Error:', error);
-});
+  
 
-  })

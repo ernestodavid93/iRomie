@@ -11,40 +11,41 @@ boton.addEventListener('click', function () {
 });//boton listener
 
 
-function chkLog() {
-	//ENVIO DE DATOS A LA BASE DE DATOS
+// function chkLog() {
+// 	//ENVIO DE DATOS A LA BASE DE DATOS
 
-    let username = document.getElementById("username");
-    let password = document.getElementById("password");
+//     let username = document.getElementById("username");
+//     let password = document.getElementById("password");
     
 
 
-    console.log(username.value);
-    console.log(password.value);
+//     console.log(username.value);
+//     console.log(password.value);
     
 
-   const login = {
+//    const login = {
   
-  username: username.value,
-  password: password.value
+//   username: username.value,
+//   password: password.value
   
-  };
+//   };
     
-    fetch('http://localhost:8081/api/login/',
-        {
-        method: 'POST', 
-        headers: {
-            'Content-Type': 'application/json',
+//     fetch('http://localhost:8081/api/login/',
+//         {
+//         method: 'POST', 
+//         headers: {
+//             'Content-Type': 'application/json',
            
-        }, 
-            body: JSON.stringify(login),
-        })
-        .then(response => response.json())
-        .then(login => {
-        console.log('Success:', login);
-        })
-        .catch((error) => {
-        console.error('Error:', error);
-        });
+//         }, 
+//             body: JSON.stringify(login),
+//         })
+//         .then(response => response.json())
+//         .then(login => {
+//             console.log('Success:', login);
+            
+//         })
+//         .catch((error) => {
+//         console.error('Error:', error);
+//         });
 
-}; //login
+// }; //login
