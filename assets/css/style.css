@@ -3,6 +3,10 @@ body {
  
 }
 
+.login-inactive{
+  display: none;
+}
+
 .view-itemImg{
     width: 100%;
 }
