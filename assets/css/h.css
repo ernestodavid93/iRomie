@@ -1,0 +1,258 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+.imgprofile {
+  height: 55%;
+}
+
+.h1 {
+  font-size: 2rem;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactanos_img {
+  background-image: url("img/house.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 120vh;
+}
+
+.imagenn {
+  background-image: url("img/meet.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 55vh;
+}
+
+.baner {
+  background-image: url("img/room.jpg");
+  height: 22rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bac {
+  border: 1px solid tomato;
+  border-radius: 10px;
+  text-align: justify;
+  margin: 15px;
+}
+
+.bgfoo {
+  background-color: tomato;
+}
+
+.iconos {
+  font-size: 3rem;
+  color: black;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+.bg {
+  background-color: white;
+}
+.enlaces {
+  display: flex;
+  text-decoration: none;
+  text-align: right;
+}
+footer {
+  text-align: center;
+}
+
+/*Home*/
+#jhome {
+  background-image: url("./img/Home2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+#jNos {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+#navbarNav {
+  place-content: center;
+}
+
+.btn.btn-outline-success {
+  background-color: rgba(5, 11, 17, 0.425);
+  color: rgb(233, 224, 224);
+  border-color: black;
+}
+
+.wrapper {
+  width: 400px;
+  background: rgb(230, 207, 207);
+  border-radius: 10px;
+  padding: 20px 25px 40px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+.price-input .field {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+.price-input .separator {
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 5px;
+  position: relative;
+  background: rgb(245, 209, 209);
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: #f76816;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.price-input {
+  width: 8cm;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #e45604;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #f5c484;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+h5 {
+  text-align: center;
+}
+
+/*Slider*/
+
+.padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.hijo {
+  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none; 
+}
+
+#slLeft,
+#slRight {
+  margin-left: 12px;
+  width: 3%;
+  display: inline-block;
+}
+#slLeft button,
+#slRight button {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.card  {
+  height: 90%;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.cardCard  {
+  height: 95%;
+  margin: 30px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+} 
+
+.cardCard img {
+  width: 100%;
+  height: 210px;
+} 
+
+.card-text {
+  height: 67%;
+}
+
+.cardImg {
+  height: 200px;
+  width: 200px;
+}

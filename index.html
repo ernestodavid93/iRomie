@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!--ICONO de la pagina en la pestaña-->
+  <link rel="icon" href="img/house-chimney-user-solid.svg"> 
+
+  <title>iRoomie</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/h.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+  <!--======CSS Slider=======================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Botones para el slider, no mover de aqui, si se mueven a la hoja de estilos entran en conflicto-->
+  <style>
+    .lSPager{
+        display: none;
+    }
+
+    .lSAction > a{
+        background-color: #00000033;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lSAction > a::after{
+        position: absolute;
+        content: '';
+        margin: auto;
+        border: solid #ffffff;
+        border-width: 0px 4px 4px 0px;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .lSAction > .lSPrev::after{
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    .lSAction > .lSNext::after{
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    /*Responsividad de los botones-----------------------------------------*/
+    @media(max-width:600px){
+        .lSAction > a{
+            display: none;
+        }
+    }
+</style>
+<!--Aqui terminan los botones del Slider-->
+<!--======Termina CSS Slider===============================-->
+</head>
+
+<body>
+
+  <header id="#top">
+
+    <nav class="main-navigation navbar navbar-expand-lg navbar-light">
+      
+      <div class="container">
+        <div id="text1">
+          <p class="p">i</p>
+          <p class="p">
+            <a class="word wisteria" href="index.html">LOVE</a>
+            <a class="word belize" href="index.html">ROOMIE</a>
+          </p>
+        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contáctanos</a>
+        </li>
+        <li class="nav-item register login-inactive">
+          <a class="nav-link" href="explore.html">Nueva publicacion</a>
+        </li>
+        <li class="nav-item closesion login-inactive"> <!--Administrar anuncios-->
+          <a class="nav-link" href="">Mis publicaciones</a>
+        </li>
+        <li class="nav-item login"> <!--identificador login para añadirle la clase login-inactive-->
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar
+            sesión</a>
+        </li>
+        <li class="nav-item closesion login-inactive"> <!--Login-inactive -> cuando iniciemos sesion se elimina esta clase y aparecera-->
+          <a class="nav-link" href="index.html">Cerrar Sesion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!--INICIO DE SESION-->
+ <div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+       
+                  <form class="px-4 py-3">
+                    <div class="form-group">
+                      <label for="exampleDropdownFormEmail1">Correo</label>
+                      <input type="email" class="form-control" id="username" placeholder="email@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleDropdownFormPassword1">Contraseña</label>
+                      <input type="password" class="form-control" id="password" placeholder="Clave">
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Recuérdame
+                        </label>
+                      </div>
+                    </div>
+                    <a type="submit" class="btn btn-primary" href="explore.html">Acceder</a>
+                  </form>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                  <a class="dropdown-item" href="userRegister.html">¿Nuevo usuario? ¡Regístrate!</a>
+                  <p style="text-align: center; font-weight: bold;">O</p>
+                  <button type="button" class="btn btn-primary">Acceder con Facebook</button>
+                  <button type="button" class="btn btn-danger">Acceder con Google</button>
+                  
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SESION FIN-->
+
+  </header>
+
+  <div class="main-banner change-name">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+
+            <h2><em>Busca tu hogar</em><i class="far fa-home-heart"></i> ideal</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="search-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="clave" class="form-label">¿Qué buscas?</label>
+                  <input type="text" id="clave" name="clave" class="searchText" placeholder="Escribe palabras clave"
+                    autocomplete="on" required>
+                </fieldset>
+              </div>
+
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="rango" class="form-label">Rango de precio</label>
+                  <select name="rango" id="rango" class="form-select" aria-label="Default select example">
+                    
+                    <option value=>$1 - $2000</option>
+                    <option value=>$2001 - $4000</option>
+                    <option value=>$4001 - $6000</option>
+                    <option value=>$6001+</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="ubicacion" class="form-label">Elige la ubicación</label>
+                  <select name="ubicacion" id="ubicacion" class="form-select" aria-label="Default select example">
+                    
+                    <option value="Guadalajara">Guadalajara</option>
+                    <option value="Zapopan">Zapopan</option>
+                    <option value="Tlajomulco">Tlajomulco</option>
+                    <option value="Tlaquepaque">Tlaquepaque</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <button type="button" id="btnF" class="main-button">Buscar</button>
+                  
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <button type="button" id="btnR" class="main-button">Refrescar</button>
+                    
+                 
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <section id="id" style="margin-left: 7rem;">
+      <!--Se manda llamar el Jason de las tarjetas mediante el ID-->
+      <!-- <ul id="listItems" class="autoWidth cS-hidden" style="width: auto;"></ul> <--UL ANTERIOR--> 
+      <ul id="list"></ul>
+    </section>
+
+
+  <!--Explora una mejor experiencia con filtros detallados-->
+  <section class="explore-work" id="explore">
+    <div class="container expanded">
+
+      <div class="section-heading text-center">
+        <h2>Explora una mejor experiencia con <br><em>Filtros detallados</em></h2>
+
+        <!--Inicio de mas filtros-->
+        <section>
+          <div class="text-center">
+            <p>
+              <a class="btn" style="background-color: tomato;" data-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+                Filtros detallados <i class="fas fa-sort-amount-down-alt"></i>
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="row">
+                <!--Inicio de los checkbox-->
+                <div class="card card-body col-md-3" style="margin-left: 2.2rem;">
+                  <h5><i class="fas fa-home"></i> Tipo de cuarto</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Cuarto privado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Cuarto compartido</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Depa/casa completa</label>
+                  </div><br>
+                </div>
+
+                <div class="card card-body col-md-4">
+                  <h5><i class="fas fa-bed"></i> Dormitorios</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1Dormitorio</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2Dormitorio</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">3Dormitorio</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">4+Dormitorio</label>
+                  </div>
+                </div>
+
+                <div class="card card-body col-md-3">
+                  <h5><i class="fas fa-users"></i> Género preferido</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Hombre</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Mujer</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">No-binario</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Sin-preferencia</label>
+                  </div>
+                </div>
+
+                <div class="card card-body col-md-5">
+                  <h5><i class="far fa-times-circle"></i> Reglas de la casa</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">No fumar</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">No beber</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">No drogas</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">No Mascotas</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">OK Mascotas</label>
+                  </div>
+                </div>
+
+                <div class="card card-body col-md-5">
+                  <h5><i class="fas fa-couch"></i>Servicios</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Lavadora</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Aire acondicionado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Amueblado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Wi-fi</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">TV</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Baño privado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Cochera</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Balcón-patio</label>
+                  </div>
+                </div>
+
+              </div>
+              <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">Cancelar</a>
+
+              <a href="#" class="btn btn-lg active" style="background-color: tomato;" role="button"
+                aria-pressed="true">Aplicar filtros</a>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </section>  <!--Explora una mejor experiencia con filtros detallados FIN-->
+
+
+
+<!--Comienza slider de las tarjetas-->
+<section class="whats-trending">
+  <div class="container expanded">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h2>Encuentra aquí<br><em>nuestras opciones disponibles</em></h2>
+          </div>
+          <div class="left-content">
+            <p>Tenemos muchas opciones para tí, encuentra tu espacio ideal.</p>
+            <div class="primary-button">
+              <a href="#">Descubre más</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-4">
+              <div class="right-image">
+                  <div class="thumb">
+                      <div class="">
+                      </div>
+                      <!-- <img src="assets/images/whats-trending-item-image.jpg" alt=""> -->
+                      <img src="assets/images/rentaindex.jpg" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!--Comienza slider de las tarjetas-->
+<section>
+
+<!--Cabezera de las tarjetas-->
+<div class="slider-heading">
+  <h3>Ultimas actualizaciones</h3>
+</div>
+
+<!--Se manda llamar el Jason de las tarjetas mediante el ID-->
+<ul id="listItems" class="autoWidth cS-hidden"></ul>
+
+</section>
+
+<!--Termina slider de las tarjetas-->
+<div class="modal" tabindex="-1" id="productModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productTitleModal">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="productBodyModal">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<!--Termina view de las tarjetas-->
+
+
+<section class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>En iRoomie nos preocupamos por ti</h2>
+      </div>
+      <div class="col-lg-4">
+        <div class="white-button">
+          <a href="contact.html">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!--Comienza footer-->
+<footer class="no-margin-footer" style="text-align:center;">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="about-widget ">
+                  <span class="p">i</span ><span class = "ft">ROOMIE</span>
+                  <p>En iRoomie estamos comprometidos con tu información, y nos interesa tu opinión. <br> 
+                  Para dudas, quejas o sugerencias, comunícate con nosotros.
+                  </p>
+              </div>
+          </div>
+          <div class="col-lg-2 offset-lg-2">
+              <div class="location-widget">
+                  <h4>Ubicación</h4>
+                  <p>Guadalajara, Jalisco. <br>México</p>
+              </div>
+          </div>
+          <div class="col-lg-2">
+              <div class="customer-care">
+                  <h4>Contacto</h4>
+                  <ul class="info">
+                      <li><a href="#">33 22 06 28 35</a></li>
+                      <li><a href="#">33 30 58 73 87</a></li>
+                      <li> <!--mandar hipervinculo para enviar mail con texto en cuerpo-->
+                        <a href="mailto:Rent.A.HomeE6@gmail.com?subject=iRoomie&body=Como te ayudamos? :D" ><p style="color:tomato;">Rent.A.HomeE6
+                          @gmail.com</p></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-2">
+              <div class="follow-us">
+                  <h4>¡Síguenos!</h4>
+                  <ul class="social-links">
+                      <li>
+                          <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                              </svg>
+                              Facebook
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                              </svg>
+                              Twitter
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg>
+                              Linkedin
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> 
+<!--Termina footer-->
+
+<!-- Scripts -->
+
+   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+   crossorigin="anonymous"></script>
+
+<!-- Scripts -->
+ <!-- Bootstrap core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+ <script src="assets/js/isotope.min.js"></script>
+ <script src="assets/js/tabs.js"></script>
+ <script src="assets/js/popup.js"></script>
+ <script src="assets/js/custom.js"></script>
+ <script src="assets/js/logo.js"></script>
+
+ <!--======JS Slider=========================================-->
+<!-- <script src="./assets/js/items.js"></script> -->
+<script src="./assets/js/products.js"></script>
+<script src="./assets/js/filtros.js"></script>
+<script src="./assets/js/login.js"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<script>
+  let sl;
+        $(document).ready(function() {
+     
+        $('.autoWidth').removeClass('cS-hidden');
+        let slider = $('.autoWidth').lightSlider({
+        
+        loop:true,
+        autoWidth:true,
+        enableTouch:true,
+        
+
+        onSliderLoad: function() {
+            $('.autoWidth').removeClass('cS-hidden');
+        } 
+
+    });
+    sl = slider;
+    console.log("refresh");
+    slider.refresh();  
+  });
+</script>
+<!--======JS Slider=========================================-->
+
+<!--Terminan Scripts-->
+
+</body>
+
+</html>
